@@ -1,16 +1,17 @@
----
 title: "Your First Agent"
 ---
 
-> [!goal]
-> Generate a starter ADK project, connect it to Gemini, and launch the local web interface.
+::: {.callout-note}
+**Goal:** Generate a starter ADK project, connect it to Gemini, and launch the local web interface.
+:::
 
 ## Step 1. Pick a Workspace Folder
 
 Create or navigate to a folder where you want to store ADK projects (for example `Documents/adk-projects`). Keep the virtual environment active inside this folder path.
 
-> [!tip]
-> On macOS, use Finder → right-click → **New Terminal at Folder**. On Windows, open the folder in File Explorer, then type `powershell` in the address bar.
+::: {.callout-tip}
+On macOS, use Finder → right-click → **New Terminal at Folder**. On Windows, open the folder in File Explorer, then type `powershell` in the address bar.
+:::
 
 ## Step 2. Create the Project
 
@@ -26,8 +27,9 @@ What the parameters mean:
 - `--model`: Chooses the Gemini model for default prompts.
 - `--api_key`: Reads the key from the environment variable you stored earlier.
 
-> [!note]
-> On Windows PowerShell, the same command works. If the API key does not populate, verify it with `echo $Env:GEMINI_API_KEY` first.
+::: {.callout-note}
+On Windows PowerShell, the same command works. If the API key does not populate, verify it with `echo $Env:GEMINI_API_KEY` first.
+:::
 
 ## Step 3. Explore the Project Layout
 
@@ -52,8 +54,9 @@ cd app_01
 adk web
 ```
 
-> [!check]
-> When the server starts, the terminal prints `Serving on http://localhost:8000`. Open that address in your browser to interact with the agent. Stop the server with `Ctrl+C` when finished.
+::: {.callout-check}
+When the server starts, the terminal prints `Serving on http://localhost:8000`. Open that address in your browser to interact with the agent. Stop the server with `Ctrl+C` when finished.
+:::
 
 ## Step 5. Capture Your Settings
 

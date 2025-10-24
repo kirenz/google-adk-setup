@@ -27,9 +27,14 @@ book:
     - part: setup/index.qmd
       chapters:
         - setup/preparation.qmd
-        - setup/python-install/index.qmd
+
+    - part: setup/python-install/index.qmd
+      chapters:
         - setup/python-install/macos-no-brew.qmd
         - setup/python-install/windows.qmd
+
+    - part: "Build Your Workspace"
+      chapters:
         - setup/venv-and-pip.qmd
         - setup/adk-install.qmd
         - setup/first-agent.qmd

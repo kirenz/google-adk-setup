@@ -1,17 +1,18 @@
----
 title: "macOS — Python 3.11 via python.org"
 ---
 
-> [!note]
-> This path relies only on the official Python installer. No Homebrew or third-party package managers are required.
+::: {.callout-note}
+This path relies only on the official Python installer. No Homebrew or third-party package managers are required.
+:::
 
 ## Step 1. Download the Installer
 
 1. Open your browser to the official Python 3.11 release page: [https://www.python.org/downloads/release/python-3110/](https://www.python.org/downloads/release/python-3110/)
 2. Scroll to **Files** and download the **macOS 64-bit universal2 installer** (`.pkg`).
 
-> [!tip]
-> Save the installer in your Downloads folder so you can remove it once the installation succeeds.
+::: {.callout-tip}
+Save the installer in your Downloads folder so you can remove it once the installation succeeds.
+:::
 
 ## Step 2. Run the Installer
 
@@ -19,8 +20,9 @@ title: "macOS — Python 3.11 via python.org"
 2. Accept the license and proceed with the default options.
 3. When prompted for admin approval, enter your password to allow the installation.
 
-> [!warning]
-> If macOS blocks the installer, right-click the `.pkg`, choose **Open**, then click **Open** again to bypass Gatekeeper for this trusted package.
+::: {.callout-warning}
+If macOS blocks the installer, right-click the `.pkg`, choose **Open**, then click **Open** again to bypass Gatekeeper for this trusted package.
+:::
 
 ## Step 3. Verify the Installation
 
@@ -36,8 +38,9 @@ python3.11 --version
 pip3.11 --version
 ```
 
-> [!check]
-> Expect outputs similar to `Python 3.11.x` and `pip 24.x`. If you see another version, retry the installer and ensure you launched the newly installed Terminal session.
+::: {.callout-check}
+Expect outputs similar to `Python 3.11.x` and `pip 24.x`. If you see another version, retry the installer and ensure you launched the newly installed Terminal session.
+:::
 
 ## Step 4. Create a Convenience Alias (Optional)
 
@@ -60,8 +63,9 @@ alias pip="pip3.11"
 source ~/.zprofile
 ```
 
-> [!note]
-> The alias only affects new Terminal sessions. If you run automated scripts later, call `python3.11` explicitly to avoid ambiguity.
+::: {.callout-note}
+The alias only affects new Terminal sessions. If you run automated scripts later, call `python3.11` explicitly to avoid ambiguity.
+:::
 
 ## Step 5. Record the Installation Path
 

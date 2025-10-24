@@ -81,5 +81,6 @@ If the command path differs, open the Python installation folder and double-clic
 pip install google-adk
 ```
 
-> [!tip]
-> If you discover a new issue, add it to this chapter with the exact command and output. A future you (or teammate) will thank you.
+::: {.callout-tip}
+If you discover a new issue, add it to this chapter with the exact command and output. A future you (or teammate) will thank you.
+:::

@@ -6,8 +6,9 @@ title: "Choose Your Python Path"
 
 The next chapters cover installing Python 3.11 with the official installers. Choose the chapter that matches your operating system and follow it start to finish.
 
-> [!tip]
-> Bookmark the chapter you use. You may need the same steps later when helping a teammate replicate the setup.
+::: {.callout-tip}
+Bookmark the chapter you use. You may need the same steps later when helping a teammate replicate the setup.
+:::
 
 ## Installation Options
 
@@ -16,8 +17,9 @@ The next chapters cover installing Python 3.11 with the official installers. Cho
 | macOS | Download the universal installer from python.org, run it, and confirm `python3.11` is available in Terminal. | [macOS — Python 3.11 via python.org](macos-no-brew.qmd) |
 | Windows | Download the 64-bit Windows installer from python.org, run it with the *Add python.exe to PATH* box checked, and confirm `python` points to 3.11. | [Windows — Python 3.11 via python.org](windows.qmd) |
 
-> [!note]
-> Linux paths vary widely by distribution and package manager. If you need a Linux setup later, replicate the same philosophy: use your distribution’s Python 3.11 packages plus `venv`.
+::: {.callout-note}
+Linux paths vary widely by distribution and package manager. If you need a Linux setup later, replicate the same philosophy: use your distribution’s Python 3.11 packages plus `venv`.
+:::
 
 ## Stay Consistent
 

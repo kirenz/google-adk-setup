@@ -1,9 +1,9 @@
----
 title: "Virtual Environment and pip"
 ---
 
-> [!goal]
-> Create an isolated Python workspace, activate it, and upgrade `pip` so ADK installs cleanly.
+::: {.callout-note}
+**Goal:** Create an isolated Python workspace, activate it, and upgrade `pip` so ADK installs cleanly.
+:::
 
 ## Why Use a Virtual Environment?
 
@@ -11,8 +11,9 @@ title: "Virtual Environment and pip"
 - Allows experiments without risking other projects.
 - Makes it easy to recreate the setup by sharing the commands.
 
-> [!tip]
-> Run the commands from the folder where you want to store your ADK projects, such as `Documents/adk`.
+::: {.callout-tip}
+Run the commands from the folder where you want to store your ADK projects, such as `Documents/adk`.
+:::
 
 ## macOS Terminal
 
@@ -48,7 +49,8 @@ python -m venv .venv
 python -m pip install --upgrade pip
 ```
 
-> [!check]
-> After activation, the prompt starts with `(.venv)` and `python --version` reports 3.11.x. If `Activate.ps1` is blocked, set the execution policy using `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` and retry.
+::: {.callout-check}
+After activation, the prompt starts with `(.venv)` and `python --version` reports 3.11.x. If `Activate.ps1` is blocked, set the execution policy using `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` and retry.
+:::
 
 Stay inside the activated environment for the remaining setup steps.

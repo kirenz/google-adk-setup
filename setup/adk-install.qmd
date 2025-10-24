@@ -1,9 +1,9 @@
----
 title: "Install Google ADK"
 ---
 
-> [!goal]
-> Install the ADK package inside your virtual environment and confirm the command-line interface is ready.
+::: {.callout-note}
+**Goal:** Install the ADK package inside your virtual environment and confirm the command-line interface is ready.
+:::
 
 ## Step 1. Confirm the Environment Is Active
 
@@ -26,8 +26,9 @@ source .venv/bin/activate
 pip install google-adk
 ```
 
-> [!note]
-> The command above works on both macOS and Windows while the environment is active. `pip` automatically resolves compatible dependencies for Python 3.11.
+::: {.callout-note}
+The command above works on both macOS and Windows while the environment is active. `pip` automatically resolves compatible dependencies for Python 3.11.
+:::
 
 ## Step 3. Verify the CLI
 
@@ -36,8 +37,9 @@ pip install google-adk
 adk --version
 ```
 
-> [!check]
-> Expect a version string such as `google-adk, version 0.x`. If you see “command not found”, revisit the activation step—the CLI is installed inside `.venv`.
+::: {.callout-check}
+Expect a version string such as `google-adk, version 0.x`. If you see “command not found”, revisit the activation step—the CLI is installed inside `.venv`.
+:::
 
 ## Step 4. Set the Gemini API Key
 
@@ -67,7 +69,8 @@ source ~/.zprofile
 $Env:GEMINI_API_KEY = "paste-your-key-here"
 ```
 
-> [!warning]
-> Treat the API key like a password. Never commit it to version control or share screenshots that display it.
+::: {.callout-warning}
+Treat the API key like a password. Never commit it to version control or share screenshots that display it.
+:::
 
 Proceed to **First Agent** to scaffold your project.

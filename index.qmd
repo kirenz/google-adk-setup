@@ -2,12 +2,11 @@
 title: "Welcome"
 ---
 
-# Where You Are Headed
-
 This short book walks you from a clean computer to a working Google Agent Development Kit (ADK) project. The focus stays on a simple path that works on macOS and Windows with the official Python installer and `pip`.
 
-> [!goal]
-> By the end, you will have a local ADK agent running in your browser, a reusable Python environment, and a checklist for common issues.
+::: {.callout-note}
+**Goal:** Finish with a local ADK agent, a reusable Python environment, and a checklist for quick troubleshooting.
+:::
 
 ## How to Use This Book
 
@@ -16,8 +15,9 @@ This short book walks you from a clean computer to a working Google Agent Develo
 - Copy commands exactly as shown; they assume the official Python 3.11 installer.
 - Keep a notes file handy. Recording versions or paths now saves time later.
 
-> [!tip]
-> If you are setting up a managed or school laptop, confirm you can install software and modify your PATH before starting.
+::: {.callout-tip}
+**Tip:** If you are setting up a managed or school laptop, confirm you can install software and modify your PATH before starting.
+:::
 
 ## Why Python 3.11 and `pip`?
 
@@ -29,7 +29,8 @@ Python 3.11 is the current sweet spot for AI tooling: fast enough, broadly suppo
 - A browser and internet connection to download installers
 - A Google account and Gemini API key (created later in the setup)
 
-> [!note]
-> No prior command-line experience is required. Every command is preceded by a short explanation, and checkpoints confirm that each step worked.
+::: {.callout-note}
+No prior command-line experience is required. Every command is preceded by a short explanation, and checkpoints confirm that each step worked.
+:::
 
 Continue with **Preparation** to learn the core ideas before installing anything.

@@ -1,9 +1,9 @@
----
 title: "Optional: Jupyter"
 ---
 
-> [!goal]
-> Add notebook support that reuses the same virtual environment as your ADK project.
+::: {.callout-note}
+**Goal:** Add notebook support that reuses the same virtual environment as your ADK project.
+:::
 
 ## When to Use Jupyter
 
@@ -27,8 +27,9 @@ pip install jupyter ipykernel
 python -m ipykernel install --user --name=adk-env
 ```
 
-> [!check]
-> The second command prints the location of the new kernel. Open Jupyter (`jupyter notebook` or VS Code) and select `adk-env` to run notebooks inside this virtual environment.
+::: {.callout-check}
+The second command prints the location of the new kernel. Open Jupyter (`jupyter notebook` or VS Code) and select `adk-env` to run notebooks inside this virtual environment.
+:::
 
 ## Keep Things in Sync
 
