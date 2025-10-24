@@ -1,0 +1,38 @@
+---
+title: "Preparation"
+---
+
+> [!goal]
+> Walk away knowing the key concepts, required accounts, and which version of Python to download.
+
+## Key Concepts in Plain Language
+
+- **Google Agent Development Kit (ADK)**: Google’s toolkit for building AI agents that can talk, reason, and take actions. You interact with it through commands like `adk create`.
+- **Python**: The programming language ADK uses. The guide standardises on **Python 3.11** because it is stable and fully compatible with current ADK releases.
+- **Virtual environment (`venv`)**: A self-contained folder that holds Python packages for a single project. It prevents updates in one project from breaking another.
+- **`pip`**: Python’s built-in package installer. You use it to add ADK and related libraries.
+- **Gemini API key**: A credential that lets ADK talk to Google’s Gemini models. You can create one later at [https://ai.google.dev](https://ai.google.dev).
+
+## Before You Continue
+
+- Make sure you can install software on your computer (admin or install permissions).
+- Have about 2 GB of free disk space.
+- Know whether you are using macOS or Windows. The next chapter sends you to the correct path.
+
+> [!note]
+> If you are migrating from another Python version, keep it installed. The virtual environment will ensure the new setup does not conflict with existing work.
+
+## Why Stick to Python 3.11?
+
+Python 3.11 hits the balance between performance and compatibility:
+
+- ADK’s templates and dependencies target 3.11 by default.
+- Major libraries (NumPy, pandas, TensorFlow) publish pre-built wheels for 3.11, saving compilation time.
+- Python 3.12 or newer may work, but not all packages have caught up yet.
+
+> [!tip]
+> When downloading from python.org, record where the installer places `python3.11`. You will confirm the location during the verification step.
+
+## Next Stop
+
+Head to **Python Installation** and choose the chapter that matches your operating system.

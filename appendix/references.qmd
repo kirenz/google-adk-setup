@@ -1,0 +1,10 @@
+---
+title: "References"
+---
+
+- Python downloads: [https://www.python.org/downloads/release/python-3110/](https://www.python.org/downloads/release/python-3110/)
+- Quarto documentation: [https://quarto.org/docs/books/](https://quarto.org/docs/books/)
+- Google ADK documentation: [https://ai.google.dev/gemini-api/tools/adk](https://ai.google.dev/gemini-api/tools/adk)
+- Gemini quickstart: [https://ai.google.dev/gemini-api/docs/quickstart](https://ai.google.dev/gemini-api/docs/quickstart)
+- PowerShell execution policy overview: [https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies)
+- Python virtual environments (`venv`): [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)

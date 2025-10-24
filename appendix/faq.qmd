@@ -1,0 +1,35 @@
+---
+title: "FAQ"
+---
+
+## Why does the guide insist on Python 3.11?
+
+ADK and most AI libraries ship precompiled wheels for Python 3.11. Earlier versions miss performance improvements; newer versions may not have all dependencies yet.
+
+## Can I use Python 3.12 instead?
+
+You can experiment with 3.12, but expect occasional package issues. If you need maximum compatibility, stick with 3.11 for now.
+
+## Do I need to uninstall other Python versions first?
+
+No. Multiple versions can coexist. Just make sure the virtual environment uses Python 3.11 and that you run commands inside the environment.
+
+## Where do I get the Gemini API key?
+
+Visit [https://ai.google.dev](https://ai.google.dev), sign in with your Google account, and create a key under **Get API key**. Store it securely using the commands shown in the ADK installation chapter.
+
+## Can I work without the API key?
+
+You can create the project, but running the agent requires a valid key. Without it, ADK cannot contact Gemini models.
+
+## Is Homebrew or another package manager required on macOS?
+
+No. The instructions rely entirely on the python.org installer and `pip`. You can add Homebrew later if you need other development tools.
+
+## How do I update ADK later?
+
+Activate your environment and run `pip install --upgrade google-adk`. Re-run `adk --version` afterwards to confirm the update.
+
+## What if I accidentally installed packages outside the virtual environment?
+
+Deactivate (`deactivate`), delete the `.venv` folder, recreate it with `python3.11 -m venv .venv`, and reinstall using the commands in the guide.

@@ -1,0 +1,66 @@
+---
+title: "Your First Agent"
+---
+
+> [!goal]
+> Generate a starter ADK project, connect it to Gemini, and launch the local web interface.
+
+## Step 1. Pick a Workspace Folder
+
+Create or navigate to a folder where you want to store ADK projects (for example `Documents/adk-projects`). Keep the virtual environment active inside this folder path.
+
+> [!tip]
+> On macOS, use Finder → right-click → **New Terminal at Folder**. On Windows, open the folder in File Explorer, then type `powershell` in the address bar.
+
+## Step 2. Create the Project
+
+<div class="cmd-explain">Scaffold a project named `app_01` using the code agent template:</div>
+```bash
+adk create --type=code app_01 --model gemini-2.0-flash-live-001 --api_key $GEMINI_API_KEY
+```
+
+What the parameters mean:
+
+- `--type=code`: Sets up a code-oriented agent.
+- `app_01`: Creates a folder with that name.
+- `--model`: Chooses the Gemini model for default prompts.
+- `--api_key`: Reads the key from the environment variable you stored earlier.
+
+> [!note]
+> On Windows PowerShell, the same command works. If the API key does not populate, verify it with `echo $Env:GEMINI_API_KEY` first.
+
+## Step 3. Explore the Project Layout
+
+<div class="cmd-explain">List the files that ADK generated:</div>
+```bash
+ls app_01
+```
+
+You should see configuration files (such as `adk.yaml`) and starter code under `app_01/src`.
+
+## Step 4. Start the Web Interface
+
+Change into the project directory, then launch the ADK web UI.
+
+<div class="cmd-explain">Move into the project folder:</div>
+```bash
+cd app_01
+```
+
+<div class="cmd-explain">Start the local ADK web experience:</div>
+```bash
+adk web
+```
+
+> [!check]
+> When the server starts, the terminal prints `Serving on http://localhost:8000`. Open that address in your browser to interact with the agent. Stop the server with `Ctrl+C` when finished.
+
+## Step 5. Capture Your Settings
+
+Record the following for future reference:
+
+- Python version (`python --version`)
+- ADK version (`adk --version`)
+- Location of the project folder
+
+Having this information handy makes it easier to recreate the environment on a new machine.

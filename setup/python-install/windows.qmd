@@ -1,0 +1,64 @@
+---
+title: "Windows — Python 3.11 via python.org"
+---
+
+> [!note]
+> These steps use the official Windows installer. They work on Windows 10 and Windows 11.
+
+## Step 1. Download the Installer
+
+1. In your browser, open [https://www.python.org/downloads/release/python-3110/](https://www.python.org/downloads/release/python-3110/).
+2. Under **Files**, download **Windows installer (64-bit)**.
+
+> [!tip]
+> Do not run the installer from inside the ZIP preview. Save it to your Downloads folder first.
+
+## Step 2. Run the Installer with the Correct Options
+
+1. Double-click `python-3.11.x-amd64.exe`.
+2. At the bottom of the first screen, **check** the box labeled **Add python.exe to PATH**.
+3. Click **Customize installation**. Keep all optional features checked.
+4. On the next screen, ensure **Install for all users** is selected (requires admin rights) and confirm the install location (default is `C:\Program Files\Python311\`).
+5. Click **Install** and let the setup finish.
+
+If Windows SmartScreen warns you, choose **More info** → **Run anyway**.
+
+## Step 3. Verify the Installation
+
+Open **Windows Terminal** or **PowerShell** (Win + X → Windows Terminal).
+
+<div class="cmd-explain">Confirm that Python 3.11 is active when calling `python`:</div>
+```powershell
+python --version
+```
+
+<div class="cmd-explain">Confirm that `pip` is bundled with this interpreter:</div>
+```powershell
+pip --version
+```
+
+> [!check]
+> You should see `Python 3.11.x` and `pip 24.x`. If the version is different or the commands are missing, sign out and back in to refresh the PATH, then retry the checks.
+
+## Step 4. Enable Long Paths (Optional but Helpful)
+
+Some Python packages create nested folders. Enable long paths to avoid errors.
+
+<div class="cmd-explain">Turn on long path support via PowerShell:</div>
+```powershell
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
+  -Name "LongPathsEnabled" -Value 1
+```
+
+Restart Windows Terminal after running the command.
+
+## Step 5. Record the Installation Path
+
+<div class="cmd-explain">Print the directory where `python.exe` lives:</div>
+```powershell
+Get-Command python | Select-Object -ExpandProperty Source
+```
+
+Keep the path handy for IDE configuration (for example `C:\Program Files\Python311\python.exe`).
+
+Proceed to **Virtual Environment and `pip`** once all checks pass.
