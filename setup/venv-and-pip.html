@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Google Agent Development Kit (ADK) Setup">
 
-<title>6&nbsp; Virtual Environment and pip – ADK Setup</title>
+<title>5&nbsp; title: “Virtual Environment and pip” – ADK Setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,14 +72,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f4cc9626f044588a66931b604fc9c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-969ddfa49e00a70eb3423444dbc81f6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f6563ed5d51701d002bb91d21de44dd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fa6efc770c2d319c973cf89115f34324.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -126,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/index.html">Setup Overview</a></li><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Virtual Environment and pip</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html">Build Your Workspace</a></li><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">title: “Virtual Environment and pip”</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -139,7 +140,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">ADK Setup</a> 
         <div class="sidebar-tools-main">
@@ -158,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../setup/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup Overview</span></a>
+ <span class="menu-text">Orientation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -170,46 +173,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparation</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choose Your Python Path</span></span></a>
-  </div>
-</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Choose Your Python Path</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/python-install/macos-no-brew.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">macOS — Python 3.11 via python.org</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">title: “macOS — Python 3.11 via python.org”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/python-install/windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Windows — Python 3.11 via python.org</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">title: “Windows — Python 3.11 via python.org”</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Build Your Workspace</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/venv-and-pip.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Virtual Environment and pip</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">title: “Virtual Environment and pip”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/adk-install.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Install Google ADK</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “Install Google ADK”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/first-agent.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Your First Agent</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Optional: Jupyter</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: “Optional: Jupyter”</span></span></a>
   </div>
 </li>
       </ul>
@@ -218,15 +237,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../troubleshooting/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Troubleshooting Guide</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../troubleshooting/common-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
   </div>
 </li>
       </ul>
@@ -235,21 +254,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../appendix/glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
       </ul>
@@ -264,18 +283,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-use-a-virtual-environment" id="toc-why-use-a-virtual-environment" class="nav-link active" data-scroll-target="#why-use-a-virtual-environment"><span class="header-section-number">6.1</span> Why Use a Virtual Environment?</a></li>
-  <li><a href="#macos-terminal" id="toc-macos-terminal" class="nav-link" data-scroll-target="#macos-terminal"><span class="header-section-number">6.2</span> macOS Terminal</a></li>
-  <li><a href="#windows-powershell" id="toc-windows-powershell" class="nav-link" data-scroll-target="#windows-powershell"><span class="header-section-number">6.3</span> Windows PowerShell</a></li>
+  <li><a href="#why-use-a-virtual-environment" id="toc-why-use-a-virtual-environment" class="nav-link active" data-scroll-target="#why-use-a-virtual-environment"><span class="header-section-number">5.1</span> Why Use a Virtual Environment?</a></li>
+  <li><a href="#macos-terminal" id="toc-macos-terminal" class="nav-link" data-scroll-target="#macos-terminal"><span class="header-section-number">5.2</span> macOS Terminal</a></li>
+  <li><a href="#windows-powershell" id="toc-windows-powershell" class="nav-link" data-scroll-target="#windows-powershell"><span class="header-section-number">5.3</span> Windows PowerShell</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/index.html">Setup Overview</a></li><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Virtual Environment and pip</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html">Build Your Workspace</a></li><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">title: “Virtual Environment and pip”</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Virtual Environment and pip</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">title: “Virtual Environment and pip”</span></h1>
 </div>
 
 
@@ -292,52 +311,66 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<blockquote class="blockquote">
-<p>[!goal] Create an isolated Python workspace, activate it, and upgrade <code>pip</code> so ADK installs cleanly.</p>
-</blockquote>
-<section id="why-use-a-virtual-environment" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="why-use-a-virtual-environment"><span class="header-section-number">6.1</span> Why Use a Virtual Environment?</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Goal:</strong> Create an isolated Python workspace, activate it, and upgrade <code>pip</code> so ADK installs cleanly.</p>
+</div>
+</div>
+</div>
+<section id="why-use-a-virtual-environment" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="why-use-a-virtual-environment"><span class="header-section-number">5.1</span> Why Use a Virtual Environment?</h2>
 <ul>
 <li>Keeps ADK and its libraries separate from system Python.</li>
 <li>Allows experiments without risking other projects.</li>
 <li>Makes it easy to recreate the setup by sharing the commands.</li>
 </ul>
-<blockquote class="blockquote">
-<p>[!tip] Run the commands from the folder where you want to store your ADK projects, such as <code>Documents/adk</code>.</p>
-</blockquote>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Run the commands from the folder where you want to store your ADK projects, such as <code>Documents/adk</code>.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="macos-terminal" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="macos-terminal"><span class="header-section-number">6.2</span> macOS Terminal</h2>
+<section id="macos-terminal" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="macos-terminal"><span class="header-section-number">5.2</span> macOS Terminal</h2>
 <div class="cmd-explain">
 Create a virtual environment named <code>.venv</code> using Python 3.11:
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3.11</span> <span class="at">-m</span> venv .venv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3.11</span> <span class="at">-m</span> venv .venv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Activate the environment (notice the <code>(.venv)</code> prefix in your prompt):
 </div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Upgrade <code>pip</code> inside the activated environment:
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> pip install <span class="at">--upgrade</span> pip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> pip install <span class="at">--upgrade</span> pip</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="windows-powershell" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="windows-powershell"><span class="header-section-number">6.3</span> Windows PowerShell</h2>
+<section id="windows-powershell" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="windows-powershell"><span class="header-section-number">5.3</span> Windows PowerShell</h2>
 <div class="cmd-explain">
 Create the <code>.venv</code> folder using the Python 3.11 interpreter:
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>python <span class="op">-</span>m venv <span class="op">.</span><span class="fu">venv</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>python <span class="op">-</span>m venv <span class="op">.</span><span class="fu">venv</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Activate the environment for the current PowerShell session:
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\\<span class="op">.</span><span class="fu">venv</span>\\Scripts\\Activate<span class="op">.</span><span class="fu">ps1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\\<span class="op">.</span><span class="fu">venv</span>\\Scripts\\Activate<span class="op">.</span><span class="fu">ps1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Upgrade <code>pip</code> while the environment is active:
 </div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>python <span class="op">-</span>m pip install <span class="op">--</span>upgrade pip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<blockquote class="blockquote">
-<p>[!check] After activation, the prompt starts with <code>(.venv)</code> and <code>python --version</code> reports 3.11.x. If <code>Activate.ps1</code> is blocked, set the execution policy using <code>Set-ExecutionPolicy -Scope CurrentUser RemoteSigned</code> and retry.</p>
-</blockquote>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>python <span class="op">-</span>m pip install <span class="op">--</span>upgrade pip</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout-check">
+<p>After activation, the prompt starts with <code>(.venv)</code> and <code>python --version</code> reports 3.11.x. If <code>Activate.ps1</code> is blocked, set the execution policy using <code>Set-ExecutionPolicy -Scope CurrentUser RemoteSigned</code> and retry.</p>
+</div>
 <p>Stay inside the activated environment for the remaining setup steps.</p>
 
 
@@ -395,13 +428,14 @@ Upgrade <code>pip</code> while the environment is active:
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -745,13 +779,13 @@ Upgrade <code>pip</code> while the environment is active:
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../setup/python-install/windows.html" class="pagination-link" aria-label="Windows — Python 3.11 via python.org">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Windows — Python 3.11 via python.org</span></span>
+      <a href="../setup/python-install/windows.html" class="pagination-link" aria-label="title: &quot;Windows — Python 3.11 via python.org&quot;">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">title: “Windows — Python 3.11 via python.org”</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../setup/adk-install.html" class="pagination-link" aria-label="Install Google ADK">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Install Google ADK</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../setup/adk-install.html" class="pagination-link" aria-label="title: &quot;Install Google ADK&quot;">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “Install Google ADK”</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

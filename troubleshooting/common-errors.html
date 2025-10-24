@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Google Agent Development Kit (ADK) Setup">
 
-<title>10&nbsp; Common Errors – ADK Setup</title>
+<title>9&nbsp; Common Errors – ADK Setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,14 +72,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f4cc9626f044588a66931b604fc9c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-969ddfa49e00a70eb3423444dbc81f6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f6563ed5d51701d002bb91d21de44dd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fa6efc770c2d319c973cf89115f34324.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -126,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../troubleshooting/index.html">Troubleshooting Guide</a></li><li class="breadcrumb-item"><a href="../troubleshooting/common-errors.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Common Errors</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../troubleshooting/index.html">Troubleshooting Guide</a></li><li class="breadcrumb-item"><a href="../troubleshooting/common-errors.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Common Errors</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -139,7 +140,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">ADK Setup</a> 
         <div class="sidebar-tools-main">
@@ -158,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../setup/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup Overview</span></a>
+ <span class="menu-text">Orientation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -170,46 +173,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparation</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choose Your Python Path</span></span></a>
-  </div>
-</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Choose Your Python Path</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/python-install/macos-no-brew.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">macOS — Python 3.11 via python.org</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">title: “macOS — Python 3.11 via python.org”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/python-install/windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Windows — Python 3.11 via python.org</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">title: “Windows — Python 3.11 via python.org”</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Build Your Workspace</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/venv-and-pip.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Virtual Environment and pip</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">title: “Virtual Environment and pip”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/adk-install.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Install Google ADK</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “Install Google ADK”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/first-agent.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Your First Agent</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Optional: Jupyter</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: “Optional: Jupyter”</span></span></a>
   </div>
 </li>
       </ul>
@@ -218,15 +237,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../troubleshooting/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Troubleshooting Guide</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../troubleshooting/common-errors.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
   </div>
 </li>
       </ul>
@@ -235,21 +254,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../appendix/glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
       </ul>
@@ -264,20 +283,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#adk-command-not-found" id="toc-adk-command-not-found" class="nav-link active" data-scroll-target="#adk-command-not-found"><span class="header-section-number">10.1</span> <code>adk: command not found</code></a></li>
-  <li><a href="#python3.11-command-not-found-macos" id="toc-python3.11-command-not-found-macos" class="nav-link" data-scroll-target="#python3.11-command-not-found-macos"><span class="header-section-number">10.2</span> <code>python3.11: command not found</code> (macOS)</a></li>
-  <li><a href="#pip-points-to-another-python-windows" id="toc-pip-points-to-another-python-windows" class="nav-link" data-scroll-target="#pip-points-to-another-python-windows"><span class="header-section-number">10.3</span> <code>pip</code> Points to Another Python (Windows)</a></li>
-  <li><a href="#tlsssl-errors-during-pip-install" id="toc-tlsssl-errors-during-pip-install" class="nav-link" data-scroll-target="#tlsssl-errors-during-pip-install"><span class="header-section-number">10.4</span> TLS/SSL Errors During <code>pip install</code></a></li>
-  <li><a href="#modulenotfounderror-after-activating-the-environment" id="toc-modulenotfounderror-after-activating-the-environment" class="nav-link" data-scroll-target="#modulenotfounderror-after-activating-the-environment"><span class="header-section-number">10.5</span> <code>ModuleNotFoundError</code> After Activating the Environment</a></li>
+  <li><a href="#adk-command-not-found" id="toc-adk-command-not-found" class="nav-link active" data-scroll-target="#adk-command-not-found"><span class="header-section-number">9.1</span> <code>adk: command not found</code></a></li>
+  <li><a href="#python3.11-command-not-found-macos" id="toc-python3.11-command-not-found-macos" class="nav-link" data-scroll-target="#python3.11-command-not-found-macos"><span class="header-section-number">9.2</span> <code>python3.11: command not found</code> (macOS)</a></li>
+  <li><a href="#pip-points-to-another-python-windows" id="toc-pip-points-to-another-python-windows" class="nav-link" data-scroll-target="#pip-points-to-another-python-windows"><span class="header-section-number">9.3</span> <code>pip</code> Points to Another Python (Windows)</a></li>
+  <li><a href="#tlsssl-errors-during-pip-install" id="toc-tlsssl-errors-during-pip-install" class="nav-link" data-scroll-target="#tlsssl-errors-during-pip-install"><span class="header-section-number">9.4</span> TLS/SSL Errors During <code>pip install</code></a></li>
+  <li><a href="#modulenotfounderror-after-activating-the-environment" id="toc-modulenotfounderror-after-activating-the-environment" class="nav-link" data-scroll-target="#modulenotfounderror-after-activating-the-environment"><span class="header-section-number">9.5</span> <code>ModuleNotFoundError</code> After Activating the Environment</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../troubleshooting/index.html">Troubleshooting Guide</a></li><li class="breadcrumb-item"><a href="../troubleshooting/common-errors.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Common Errors</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../troubleshooting/index.html">Troubleshooting Guide</a></li><li class="breadcrumb-item"><a href="../troubleshooting/common-errors.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Common Errors</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Common Errors</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Common Errors</span></h1>
 </div>
 
 
@@ -294,8 +313,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="adk-command-not-found" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="adk-command-not-found"><span class="header-section-number">10.1</span> <code>adk: command not found</code></h2>
+<section id="adk-command-not-found" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="adk-command-not-found"><span class="header-section-number">9.1</span> <code>adk: command not found</code></h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -321,18 +340,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cmd-explain">
 Activate the environment on macOS:
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Reactivate the environment on Windows:
 </div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\\<span class="op">.</span><span class="fu">venv</span>\\Scripts\\Activate<span class="op">.</span><span class="fu">ps1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\\<span class="op">.</span><span class="fu">venv</span>\\Scripts\\Activate<span class="op">.</span><span class="fu">ps1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Reinstall ADK in the active environment if needed:
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> pip install google-adk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> pip install google-adk</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="python3.11-command-not-found-macos" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="python3.11-command-not-found-macos"><span class="header-section-number">10.2</span> <code>python3.11: command not found</code> (macOS)</h2>
+<section id="python3.11-command-not-found-macos" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="python3.11-command-not-found-macos"><span class="header-section-number">9.2</span> <code>python3.11: command not found</code> (macOS)</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -358,14 +377,14 @@ Reinstall ADK in the active environment if needed:
 <div class="cmd-explain">
 Add <code>/usr/local/bin</code> to the PATH if needed:
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">'export PATH="/usr/local/bin:$PATH"'</span> <span class="op">&gt;&gt;</span> ~/.zprofile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">'export PATH="/usr/local/bin:$PATH"'</span> <span class="op">&gt;&gt;</span> ~/.zprofile</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Reload the profile to apply the change:
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.zprofile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.zprofile</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="pip-points-to-another-python-windows" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="pip-points-to-another-python-windows"><span class="header-section-number">10.3</span> <code>pip</code> Points to Another Python (Windows)</h2>
+<section id="pip-points-to-another-python-windows" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="pip-points-to-another-python-windows"><span class="header-section-number">9.3</span> <code>pip</code> Points to Another Python (Windows)</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -387,10 +406,10 @@ Reload the profile to apply the change:
 <div class="cmd-explain">
 Invoke <code>pip</code> through Python 3.11:
 </div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>python <span class="op">-</span>m pip install <span class="op">--</span>upgrade pip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>python <span class="op">-</span>m pip install <span class="op">--</span>upgrade pip</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="tlsssl-errors-during-pip-install" class="level2" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="tlsssl-errors-during-pip-install"><span class="header-section-number">10.4</span> TLS/SSL Errors During <code>pip install</code></h2>
+<section id="tlsssl-errors-during-pip-install" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="tlsssl-errors-during-pip-install"><span class="header-section-number">9.4</span> TLS/SSL Errors During <code>pip install</code></h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -412,15 +431,15 @@ Invoke <code>pip</code> through Python 3.11:
 <div class="cmd-explain">
 Run the certificate installation script (macOS):
 </div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="st">"/Applications/Python 3.11/Install Certificates.command"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="st">"/Applications/Python 3.11/Install Certificates.command"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Run the certificate installation script (Windows):
 </div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">&amp;</span> <span class="st">"C:\Program Files\Python311\Install Certificates.command"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">&amp;</span> <span class="st">"C:\Program Files\Python311\Install Certificates.command"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>If the command path differs, open the Python installation folder and double-click the script manually.</p>
 </section>
-<section id="modulenotfounderror-after-activating-the-environment" class="level2" data-number="10.5">
-<h2 data-number="10.5" class="anchored" data-anchor-id="modulenotfounderror-after-activating-the-environment"><span class="header-section-number">10.5</span> <code>ModuleNotFoundError</code> After Activating the Environment</h2>
+<section id="modulenotfounderror-after-activating-the-environment" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="modulenotfounderror-after-activating-the-environment"><span class="header-section-number">9.5</span> <code>ModuleNotFoundError</code> After Activating the Environment</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -442,10 +461,17 @@ Run the certificate installation script (Windows):
 <div class="cmd-explain">
 Install a missing package (example for <code>google-adk</code>):
 </div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install google-adk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<blockquote class="blockquote">
-<p>[!tip] If you discover a new issue, add it to this chapter with the exact command and output. A future you (or teammate) will thank you.</p>
-</blockquote>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install google-adk</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>If you discover a new issue, add it to this chapter with the exact command and output. A future you (or teammate) will thank you.</p>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -502,13 +528,14 @@ Install a missing package (example for <code>google-adk</code>):
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

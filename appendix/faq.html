@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Google Agent Development Kit (ADK) Setup">
 
-<title>11&nbsp; FAQ – ADK Setup</title>
+<title>10&nbsp; FAQ – ADK Setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,14 +37,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f4cc9626f044588a66931b604fc9c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-969ddfa49e00a70eb3423444dbc81f6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f6563ed5d51701d002bb91d21de44dd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fa6efc770c2d319c973cf89115f34324.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -91,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendix/glossary.html">Glossary</a></li><li class="breadcrumb-item"><a href="../appendix/faq.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">FAQ</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendix/glossary.html">Glossary</a></li><li class="breadcrumb-item"><a href="../appendix/faq.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">FAQ</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -104,7 +105,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">ADK Setup</a> 
         <div class="sidebar-tools-main">
@@ -123,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../setup/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup Overview</span></a>
+ <span class="menu-text">Orientation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -135,46 +138,62 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparation</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choose Your Python Path</span></span></a>
-  </div>
-</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Choose Your Python Path</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/python-install/macos-no-brew.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">macOS — Python 3.11 via python.org</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">title: “macOS — Python 3.11 via python.org”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/python-install/windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Windows — Python 3.11 via python.org</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">title: “Windows — Python 3.11 via python.org”</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Build Your Workspace</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/venv-and-pip.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Virtual Environment and pip</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">title: “Virtual Environment and pip”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/adk-install.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Install Google ADK</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “Install Google ADK”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/first-agent.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Your First Agent</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Optional: Jupyter</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: “Optional: Jupyter”</span></span></a>
   </div>
 </li>
       </ul>
@@ -183,15 +202,15 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../troubleshooting/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Troubleshooting Guide</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../troubleshooting/common-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
   </div>
 </li>
       </ul>
@@ -200,21 +219,21 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../appendix/glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/faq.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
       </ul>
@@ -229,23 +248,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-does-the-guide-insist-on-python-3.11" id="toc-why-does-the-guide-insist-on-python-3.11" class="nav-link active" data-scroll-target="#why-does-the-guide-insist-on-python-3.11"><span class="header-section-number">11.1</span> Why does the guide insist on Python 3.11?</a></li>
-  <li><a href="#can-i-use-python-3.12-instead" id="toc-can-i-use-python-3.12-instead" class="nav-link" data-scroll-target="#can-i-use-python-3.12-instead"><span class="header-section-number">11.2</span> Can I use Python 3.12 instead?</a></li>
-  <li><a href="#do-i-need-to-uninstall-other-python-versions-first" id="toc-do-i-need-to-uninstall-other-python-versions-first" class="nav-link" data-scroll-target="#do-i-need-to-uninstall-other-python-versions-first"><span class="header-section-number">11.3</span> Do I need to uninstall other Python versions first?</a></li>
-  <li><a href="#where-do-i-get-the-gemini-api-key" id="toc-where-do-i-get-the-gemini-api-key" class="nav-link" data-scroll-target="#where-do-i-get-the-gemini-api-key"><span class="header-section-number">11.4</span> Where do I get the Gemini API key?</a></li>
-  <li><a href="#can-i-work-without-the-api-key" id="toc-can-i-work-without-the-api-key" class="nav-link" data-scroll-target="#can-i-work-without-the-api-key"><span class="header-section-number">11.5</span> Can I work without the API key?</a></li>
-  <li><a href="#is-homebrew-or-another-package-manager-required-on-macos" id="toc-is-homebrew-or-another-package-manager-required-on-macos" class="nav-link" data-scroll-target="#is-homebrew-or-another-package-manager-required-on-macos"><span class="header-section-number">11.6</span> Is Homebrew or another package manager required on macOS?</a></li>
-  <li><a href="#how-do-i-update-adk-later" id="toc-how-do-i-update-adk-later" class="nav-link" data-scroll-target="#how-do-i-update-adk-later"><span class="header-section-number">11.7</span> How do I update ADK later?</a></li>
-  <li><a href="#what-if-i-accidentally-installed-packages-outside-the-virtual-environment" id="toc-what-if-i-accidentally-installed-packages-outside-the-virtual-environment" class="nav-link" data-scroll-target="#what-if-i-accidentally-installed-packages-outside-the-virtual-environment"><span class="header-section-number">11.8</span> What if I accidentally installed packages outside the virtual environment?</a></li>
+  <li><a href="#why-does-the-guide-insist-on-python-3.11" id="toc-why-does-the-guide-insist-on-python-3.11" class="nav-link active" data-scroll-target="#why-does-the-guide-insist-on-python-3.11"><span class="header-section-number">10.1</span> Why does the guide insist on Python 3.11?</a></li>
+  <li><a href="#can-i-use-python-3.12-instead" id="toc-can-i-use-python-3.12-instead" class="nav-link" data-scroll-target="#can-i-use-python-3.12-instead"><span class="header-section-number">10.2</span> Can I use Python 3.12 instead?</a></li>
+  <li><a href="#do-i-need-to-uninstall-other-python-versions-first" id="toc-do-i-need-to-uninstall-other-python-versions-first" class="nav-link" data-scroll-target="#do-i-need-to-uninstall-other-python-versions-first"><span class="header-section-number">10.3</span> Do I need to uninstall other Python versions first?</a></li>
+  <li><a href="#where-do-i-get-the-gemini-api-key" id="toc-where-do-i-get-the-gemini-api-key" class="nav-link" data-scroll-target="#where-do-i-get-the-gemini-api-key"><span class="header-section-number">10.4</span> Where do I get the Gemini API key?</a></li>
+  <li><a href="#can-i-work-without-the-api-key" id="toc-can-i-work-without-the-api-key" class="nav-link" data-scroll-target="#can-i-work-without-the-api-key"><span class="header-section-number">10.5</span> Can I work without the API key?</a></li>
+  <li><a href="#is-homebrew-or-another-package-manager-required-on-macos" id="toc-is-homebrew-or-another-package-manager-required-on-macos" class="nav-link" data-scroll-target="#is-homebrew-or-another-package-manager-required-on-macos"><span class="header-section-number">10.6</span> Is Homebrew or another package manager required on macOS?</a></li>
+  <li><a href="#how-do-i-update-adk-later" id="toc-how-do-i-update-adk-later" class="nav-link" data-scroll-target="#how-do-i-update-adk-later"><span class="header-section-number">10.7</span> How do I update ADK later?</a></li>
+  <li><a href="#what-if-i-accidentally-installed-packages-outside-the-virtual-environment" id="toc-what-if-i-accidentally-installed-packages-outside-the-virtual-environment" class="nav-link" data-scroll-target="#what-if-i-accidentally-installed-packages-outside-the-virtual-environment"><span class="header-section-number">10.8</span> What if I accidentally installed packages outside the virtual environment?</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendix/glossary.html">Glossary</a></li><li class="breadcrumb-item"><a href="../appendix/faq.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">FAQ</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendix/glossary.html">Glossary</a></li><li class="breadcrumb-item"><a href="../appendix/faq.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">FAQ</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">FAQ</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">FAQ</span></h1>
 </div>
 
 
@@ -262,36 +281,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="why-does-the-guide-insist-on-python-3.11" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="why-does-the-guide-insist-on-python-3.11"><span class="header-section-number">11.1</span> Why does the guide insist on Python 3.11?</h2>
+<section id="why-does-the-guide-insist-on-python-3.11" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="why-does-the-guide-insist-on-python-3.11"><span class="header-section-number">10.1</span> Why does the guide insist on Python 3.11?</h2>
 <p>ADK and most AI libraries ship precompiled wheels for Python 3.11. Earlier versions miss performance improvements; newer versions may not have all dependencies yet.</p>
 </section>
-<section id="can-i-use-python-3.12-instead" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="can-i-use-python-3.12-instead"><span class="header-section-number">11.2</span> Can I use Python 3.12 instead?</h2>
+<section id="can-i-use-python-3.12-instead" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="can-i-use-python-3.12-instead"><span class="header-section-number">10.2</span> Can I use Python 3.12 instead?</h2>
 <p>You can experiment with 3.12, but expect occasional package issues. If you need maximum compatibility, stick with 3.11 for now.</p>
 </section>
-<section id="do-i-need-to-uninstall-other-python-versions-first" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="do-i-need-to-uninstall-other-python-versions-first"><span class="header-section-number">11.3</span> Do I need to uninstall other Python versions first?</h2>
+<section id="do-i-need-to-uninstall-other-python-versions-first" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="do-i-need-to-uninstall-other-python-versions-first"><span class="header-section-number">10.3</span> Do I need to uninstall other Python versions first?</h2>
 <p>No.&nbsp;Multiple versions can coexist. Just make sure the virtual environment uses Python 3.11 and that you run commands inside the environment.</p>
 </section>
-<section id="where-do-i-get-the-gemini-api-key" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="where-do-i-get-the-gemini-api-key"><span class="header-section-number">11.4</span> Where do I get the Gemini API key?</h2>
+<section id="where-do-i-get-the-gemini-api-key" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="where-do-i-get-the-gemini-api-key"><span class="header-section-number">10.4</span> Where do I get the Gemini API key?</h2>
 <p>Visit <a href="https://ai.google.dev">https://ai.google.dev</a>, sign in with your Google account, and create a key under <strong>Get API key</strong>. Store it securely using the commands shown in the ADK installation chapter.</p>
 </section>
-<section id="can-i-work-without-the-api-key" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="can-i-work-without-the-api-key"><span class="header-section-number">11.5</span> Can I work without the API key?</h2>
+<section id="can-i-work-without-the-api-key" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="can-i-work-without-the-api-key"><span class="header-section-number">10.5</span> Can I work without the API key?</h2>
 <p>You can create the project, but running the agent requires a valid key. Without it, ADK cannot contact Gemini models.</p>
 </section>
-<section id="is-homebrew-or-another-package-manager-required-on-macos" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="is-homebrew-or-another-package-manager-required-on-macos"><span class="header-section-number">11.6</span> Is Homebrew or another package manager required on macOS?</h2>
+<section id="is-homebrew-or-another-package-manager-required-on-macos" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="is-homebrew-or-another-package-manager-required-on-macos"><span class="header-section-number">10.6</span> Is Homebrew or another package manager required on macOS?</h2>
 <p>No.&nbsp;The instructions rely entirely on the python.org installer and <code>pip</code>. You can add Homebrew later if you need other development tools.</p>
 </section>
-<section id="how-do-i-update-adk-later" class="level2" data-number="11.7">
-<h2 data-number="11.7" class="anchored" data-anchor-id="how-do-i-update-adk-later"><span class="header-section-number">11.7</span> How do I update ADK later?</h2>
+<section id="how-do-i-update-adk-later" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="how-do-i-update-adk-later"><span class="header-section-number">10.7</span> How do I update ADK later?</h2>
 <p>Activate your environment and run <code>pip install --upgrade google-adk</code>. Re-run <code>adk --version</code> afterwards to confirm the update.</p>
 </section>
-<section id="what-if-i-accidentally-installed-packages-outside-the-virtual-environment" class="level2" data-number="11.8">
-<h2 data-number="11.8" class="anchored" data-anchor-id="what-if-i-accidentally-installed-packages-outside-the-virtual-environment"><span class="header-section-number">11.8</span> What if I accidentally installed packages outside the virtual environment?</h2>
+<section id="what-if-i-accidentally-installed-packages-outside-the-virtual-environment" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="what-if-i-accidentally-installed-packages-outside-the-virtual-environment"><span class="header-section-number">10.8</span> What if I accidentally installed packages outside the virtual environment?</h2>
 <p>Deactivate (<code>deactivate</code>), delete the <code>.venv</code> folder, recreate it with <code>python3.11 -m venv .venv</code>, and reinstall using the commands in the guide.</p>
 
 
@@ -349,13 +368,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -705,7 +725,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="nav-page nav-page-next">
       <a href="../appendix/references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">References</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">References</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

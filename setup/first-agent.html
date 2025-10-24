@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Google Agent Development Kit (ADK) Setup">
 
-<title>8&nbsp; Your First Agent – ADK Setup</title>
+<title>7&nbsp; title: “Your First Agent” – ADK Setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,14 +72,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f4cc9626f044588a66931b604fc9c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-969ddfa49e00a70eb3423444dbc81f6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f6563ed5d51701d002bb91d21de44dd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fa6efc770c2d319c973cf89115f34324.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -126,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/index.html">Setup Overview</a></li><li class="breadcrumb-item"><a href="../setup/first-agent.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Your First Agent</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html">Build Your Workspace</a></li><li class="breadcrumb-item"><a href="../setup/first-agent.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -139,7 +140,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">ADK Setup</a> 
         <div class="sidebar-tools-main">
@@ -158,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../setup/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup Overview</span></a>
+ <span class="menu-text">Orientation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -170,46 +173,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparation</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choose Your Python Path</span></span></a>
-  </div>
-</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Choose Your Python Path</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/python-install/macos-no-brew.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">macOS — Python 3.11 via python.org</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">title: “macOS — Python 3.11 via python.org”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/python-install/windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Windows — Python 3.11 via python.org</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">title: “Windows — Python 3.11 via python.org”</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Build Your Workspace</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/venv-and-pip.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Virtual Environment and pip</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">title: “Virtual Environment and pip”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/adk-install.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Install Google ADK</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “Install Google ADK”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/first-agent.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Your First Agent</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup/jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Optional: Jupyter</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: “Optional: Jupyter”</span></span></a>
   </div>
 </li>
       </ul>
@@ -218,15 +237,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../troubleshooting/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Troubleshooting Guide</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../troubleshooting/common-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
   </div>
 </li>
       </ul>
@@ -235,21 +254,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../appendix/glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
       </ul>
@@ -264,20 +283,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#step-1.-pick-a-workspace-folder" id="toc-step-1.-pick-a-workspace-folder" class="nav-link active" data-scroll-target="#step-1.-pick-a-workspace-folder"><span class="header-section-number">8.1</span> Step 1. Pick a Workspace Folder</a></li>
-  <li><a href="#step-2.-create-the-project" id="toc-step-2.-create-the-project" class="nav-link" data-scroll-target="#step-2.-create-the-project"><span class="header-section-number">8.2</span> Step 2. Create the Project</a></li>
-  <li><a href="#step-3.-explore-the-project-layout" id="toc-step-3.-explore-the-project-layout" class="nav-link" data-scroll-target="#step-3.-explore-the-project-layout"><span class="header-section-number">8.3</span> Step 3. Explore the Project Layout</a></li>
-  <li><a href="#step-4.-start-the-web-interface" id="toc-step-4.-start-the-web-interface" class="nav-link" data-scroll-target="#step-4.-start-the-web-interface"><span class="header-section-number">8.4</span> Step 4. Start the Web Interface</a></li>
-  <li><a href="#step-5.-capture-your-settings" id="toc-step-5.-capture-your-settings" class="nav-link" data-scroll-target="#step-5.-capture-your-settings"><span class="header-section-number">8.5</span> Step 5. Capture Your Settings</a></li>
+  <li><a href="#step-1.-pick-a-workspace-folder" id="toc-step-1.-pick-a-workspace-folder" class="nav-link active" data-scroll-target="#step-1.-pick-a-workspace-folder"><span class="header-section-number">7.1</span> Step 1. Pick a Workspace Folder</a></li>
+  <li><a href="#step-2.-create-the-project" id="toc-step-2.-create-the-project" class="nav-link" data-scroll-target="#step-2.-create-the-project"><span class="header-section-number">7.2</span> Step 2. Create the Project</a></li>
+  <li><a href="#step-3.-explore-the-project-layout" id="toc-step-3.-explore-the-project-layout" class="nav-link" data-scroll-target="#step-3.-explore-the-project-layout"><span class="header-section-number">7.3</span> Step 3. Explore the Project Layout</a></li>
+  <li><a href="#step-4.-start-the-web-interface" id="toc-step-4.-start-the-web-interface" class="nav-link" data-scroll-target="#step-4.-start-the-web-interface"><span class="header-section-number">7.4</span> Step 4. Start the Web Interface</a></li>
+  <li><a href="#step-5.-capture-your-settings" id="toc-step-5.-capture-your-settings" class="nav-link" data-scroll-target="#step-5.-capture-your-settings"><span class="header-section-number">7.5</span> Step 5. Capture Your Settings</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/index.html">Setup Overview</a></li><li class="breadcrumb-item"><a href="../setup/first-agent.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Your First Agent</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html">Build Your Workspace</a></li><li class="breadcrumb-item"><a href="../setup/first-agent.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Your First Agent</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></h1>
 </div>
 
 
@@ -294,22 +313,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<blockquote class="blockquote">
-<p>[!goal] Generate a starter ADK project, connect it to Gemini, and launch the local web interface.</p>
-</blockquote>
-<section id="step-1.-pick-a-workspace-folder" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="step-1.-pick-a-workspace-folder"><span class="header-section-number">8.1</span> Step 1. Pick a Workspace Folder</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Goal:</strong> Generate a starter ADK project, connect it to Gemini, and launch the local web interface.</p>
+</div>
+</div>
+</div>
+<section id="step-1.-pick-a-workspace-folder" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="step-1.-pick-a-workspace-folder"><span class="header-section-number">7.1</span> Step 1. Pick a Workspace Folder</h2>
 <p>Create or navigate to a folder where you want to store ADK projects (for example <code>Documents/adk-projects</code>). Keep the virtual environment active inside this folder path.</p>
-<blockquote class="blockquote">
-<p>[!tip] On macOS, use Finder → right-click → <strong>New Terminal at Folder</strong>. On Windows, open the folder in File Explorer, then type <code>powershell</code> in the address bar.</p>
-</blockquote>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>On macOS, use Finder → right-click → <strong>New Terminal at Folder</strong>. On Windows, open the folder in File Explorer, then type <code>powershell</code> in the address bar.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="step-2.-create-the-project" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="step-2.-create-the-project"><span class="header-section-number">8.2</span> Step 2. Create the Project</h2>
+<section id="step-2.-create-the-project" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="step-2.-create-the-project"><span class="header-section-number">7.2</span> Step 2. Create the Project</h2>
 <div class="cmd-explain">
 Scaffold a project named <code>app_01</code> using the code agent template:
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adk</span> create <span class="at">--type</span><span class="op">=</span>code app_01 <span class="at">--model</span> gemini-2.0-flash-live-001 <span class="at">--api_key</span> <span class="va">$GEMINI_API_KEY</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adk</span> create <span class="at">--type</span><span class="op">=</span>code app_01 <span class="at">--model</span> gemini-2.0-flash-live-001 <span class="at">--api_key</span> <span class="va">$GEMINI_API_KEY</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>What the parameters mean:</p>
 <ul>
 <li><code>--type=code</code>: Sets up a code-oriented agent.</li>
@@ -317,35 +350,42 @@ Scaffold a project named <code>app_01</code> using the code agent template:
 <li><code>--model</code>: Chooses the Gemini model for default prompts.</li>
 <li><code>--api_key</code>: Reads the key from the environment variable you stored earlier.</li>
 </ul>
-<blockquote class="blockquote">
-<p>[!note] On Windows PowerShell, the same command works. If the API key does not populate, verify it with <code>echo $Env:GEMINI_API_KEY</code> first.</p>
-</blockquote>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>On Windows PowerShell, the same command works. If the API key does not populate, verify it with <code>echo $Env:GEMINI_API_KEY</code> first.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="step-3.-explore-the-project-layout" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="step-3.-explore-the-project-layout"><span class="header-section-number">8.3</span> Step 3. Explore the Project Layout</h2>
+<section id="step-3.-explore-the-project-layout" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="step-3.-explore-the-project-layout"><span class="header-section-number">7.3</span> Step 3. Explore the Project Layout</h2>
 <div class="cmd-explain">
 List the files that ADK generated:
 </div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> app_01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> app_01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You should see configuration files (such as <code>adk.yaml</code>) and starter code under <code>app_01/src</code>.</p>
 </section>
-<section id="step-4.-start-the-web-interface" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="step-4.-start-the-web-interface"><span class="header-section-number">8.4</span> Step 4. Start the Web Interface</h2>
+<section id="step-4.-start-the-web-interface" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="step-4.-start-the-web-interface"><span class="header-section-number">7.4</span> Step 4. Start the Web Interface</h2>
 <p>Change into the project directory, then launch the ADK web UI.</p>
 <div class="cmd-explain">
 Move into the project folder:
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> app_01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> app_01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cmd-explain">
 Start the local ADK web experience:
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adk</span> web</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<blockquote class="blockquote">
-<p>[!check] When the server starts, the terminal prints <code>Serving on http://localhost:8000</code>. Open that address in your browser to interact with the agent. Stop the server with <code>Ctrl+C</code> when finished.</p>
-</blockquote>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adk</span> web</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout-check">
+<p>When the server starts, the terminal prints <code>Serving on http://localhost:8000</code>. Open that address in your browser to interact with the agent. Stop the server with <code>Ctrl+C</code> when finished.</p>
+</div>
 </section>
-<section id="step-5.-capture-your-settings" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="step-5.-capture-your-settings"><span class="header-section-number">8.5</span> Step 5. Capture Your Settings</h2>
+<section id="step-5.-capture-your-settings" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="step-5.-capture-your-settings"><span class="header-section-number">7.5</span> Step 5. Capture Your Settings</h2>
 <p>Record the following for future reference:</p>
 <ul>
 <li>Python version (<code>python --version</code>)</li>
@@ -409,13 +449,14 @@ Start the local ADK web experience:
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -759,13 +800,13 @@ Start the local ADK web experience:
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../setup/adk-install.html" class="pagination-link" aria-label="Install Google ADK">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Install Google ADK</span></span>
+      <a href="../setup/adk-install.html" class="pagination-link" aria-label="title: &quot;Install Google ADK&quot;">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “Install Google ADK”</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../setup/jupyter.html" class="pagination-link" aria-label="Optional: Jupyter">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Optional: Jupyter</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../setup/jupyter.html" class="pagination-link" aria-label="title: &quot;Optional: Jupyter&quot;">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: “Optional: Jupyter”</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
