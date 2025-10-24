@@ -1,0 +1,696 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ADK Setup",
+    "section": "",
+    "text": "1 Where You Are Headed\nThis short book walks you from a clean computer to a working Google Agent Development Kit (ADK) project. The focus stays on a simple path that works on macOS and Windows with the official Python installer and pip.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-book",
+    "href": "index.html#how-to-use-this-book",
+    "title": "ADK Setup",
+    "section": "1.1 How to Use This Book",
+    "text": "1.1 How to Use This Book\n\nMove through the chapters in order. Each builds on the previous one.\nChoose the operating system that matches your device when prompted.\nCopy commands exactly as shown; they assume the official Python 3.11 installer.\nKeep a notes file handy. Recording versions or paths now saves time later.\n\n\n[!tip] If you are setting up a managed or school laptop, confirm you can install software and modify your PATH before starting.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#why-python-3.11-and-pip",
+    "href": "index.html#why-python-3.11-and-pip",
+    "title": "ADK Setup",
+    "section": "1.2 Why Python 3.11 and pip?",
+    "text": "1.2 Why Python 3.11 and pip?\nPython 3.11 is the current sweet spot for AI tooling: fast enough, broadly supported, and stable. Using the built-in venv module together with pip keeps the workflow lightweight, so you avoid extra package managers or community tooling until you need them.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#what-you-need",
+    "href": "index.html#what-you-need",
+    "title": "ADK Setup",
+    "section": "1.3 What You Need",
+    "text": "1.3 What You Need\n\nmacOS 12+ or Windows 10/11 with administrator access\nA browser and internet connection to download installers\nA Google account and Gemini API key (created later in the setup)\n\n\n[!note] No prior command-line experience is required. Every command is preceded by a short explanation, and checkpoints confirm that each step worked.\n\nContinue with Preparation to learn the core ideas before installing anything.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "setup/index.html",
+    "href": "setup/index.html",
+    "title": "Setup Overview",
+    "section": "",
+    "text": "Read This Part First\nThis part of the book guides you step by step from installing Python through launching your first ADK agent. Each chapter answers three questions:",
+    "crumbs": [
+      "Setup Overview"
+    ]
+  },
+  {
+    "objectID": "setup/index.html#structure-of-the-setup-part",
+    "href": "setup/index.html#structure-of-the-setup-part",
+    "title": "Setup Overview",
+    "section": "Structure of the Setup Part",
+    "text": "Structure of the Setup Part\n\nPreparation — key terms and why the guide standardises on Python 3.11.\nPython Installation — choose either macOS or Windows instructions.\nVirtual Environment and pip — how to keep your ADK tools isolated.\nInstall ADK — add the Google toolkit inside your environment.\nFirst Agent — scaffold a project and open the local web UI.\nJupyter (Optional) — integrate notebooks when useful.\n\n\n[!tip] When you reach an operating system branch, complete only the chapter that matches your computer. Return to the shared chapters once that installation succeeds.",
+    "crumbs": [
+      "Setup Overview"
+    ]
+  },
+  {
+    "objectID": "setup/index.html#checkpoints",
+    "href": "setup/index.html#checkpoints",
+    "title": "Setup Overview",
+    "section": "Checkpoints",
+    "text": "Checkpoints\nEach chapter ends with a [!check] callout describing what success looks like. If a step fails, jump to the Troubleshooting part—every symptom has a matching fix.",
+    "crumbs": [
+      "Setup Overview"
+    ]
+  },
+  {
+    "objectID": "setup/preparation.html",
+    "href": "setup/preparation.html",
+    "title": "2  Preparation",
+    "section": "",
+    "text": "2.1 Key Concepts in Plain Language",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "setup/preparation.html#key-concepts-in-plain-language",
+    "href": "setup/preparation.html#key-concepts-in-plain-language",
+    "title": "2  Preparation",
+    "section": "",
+    "text": "Google Agent Development Kit (ADK): Google’s toolkit for building AI agents that can talk, reason, and take actions. You interact with it through commands like adk create.\nPython: The programming language ADK uses. The guide standardises on Python 3.11 because it is stable and fully compatible with current ADK releases.\nVirtual environment (venv): A self-contained folder that holds Python packages for a single project. It prevents updates in one project from breaking another.\npip: Python’s built-in package installer. You use it to add ADK and related libraries.\nGemini API key: A credential that lets ADK talk to Google’s Gemini models. You can create one later at https://ai.google.dev.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "setup/preparation.html#before-you-continue",
+    "href": "setup/preparation.html#before-you-continue",
+    "title": "2  Preparation",
+    "section": "2.2 Before You Continue",
+    "text": "2.2 Before You Continue\n\nMake sure you can install software on your computer (admin or install permissions).\nHave about 2 GB of free disk space.\nKnow whether you are using macOS or Windows. The next chapter sends you to the correct path.\n\n\n[!note] If you are migrating from another Python version, keep it installed. The virtual environment will ensure the new setup does not conflict with existing work.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "setup/preparation.html#why-stick-to-python-3.11",
+    "href": "setup/preparation.html#why-stick-to-python-3.11",
+    "title": "2  Preparation",
+    "section": "2.3 Why Stick to Python 3.11?",
+    "text": "2.3 Why Stick to Python 3.11?\nPython 3.11 hits the balance between performance and compatibility:\n\nADK’s templates and dependencies target 3.11 by default.\nMajor libraries (NumPy, pandas, TensorFlow) publish pre-built wheels for 3.11, saving compilation time.\nPython 3.12 or newer may work, but not all packages have caught up yet.\n\n\n[!tip] When downloading from python.org, record where the installer places python3.11. You will confirm the location during the verification step.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "setup/preparation.html#next-stop",
+    "href": "setup/preparation.html#next-stop",
+    "title": "2  Preparation",
+    "section": "2.4 Next Stop",
+    "text": "2.4 Next Stop\nHead to Python Installation and choose the chapter that matches your operating system.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/index.html",
+    "href": "setup/python-install/index.html",
+    "title": "3  Choose Your Python Path",
+    "section": "",
+    "text": "4 Pick the Right Instructions\nThe next chapters cover installing Python 3.11 with the official installers. Choose the chapter that matches your operating system and follow it start to finish.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Choose Your Python Path</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/index.html#installation-options",
+    "href": "setup/python-install/index.html#installation-options",
+    "title": "3  Choose Your Python Path",
+    "section": "4.1 Installation Options",
+    "text": "4.1 Installation Options\n\n\n\nOperating System\nWhat You Will Do\nStart Here\n\n\n\n\nmacOS\nDownload the universal installer from python.org, run it, and confirm python3.11 is available in Terminal.\nmacOS — Python 3.11 via python.org\n\n\nWindows\nDownload the 64-bit Windows installer from python.org, run it with the Add python.exe to PATH box checked, and confirm python points to 3.11.\nWindows — Python 3.11 via python.org\n\n\n\n\n[!note] Linux paths vary widely by distribution and package manager. If you need a Linux setup later, replicate the same philosophy: use your distribution’s Python 3.11 packages plus venv.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Choose Your Python Path</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/index.html#stay-consistent",
+    "href": "setup/python-install/index.html#stay-consistent",
+    "title": "3  Choose Your Python Path",
+    "section": "4.2 Stay Consistent",
+    "text": "4.2 Stay Consistent\n\nUse the same target version (3.11.x) on every machine.\nAvoid mixing installers. Do not combine the python.org installer with other package managers on the same computer.\nWhen the installer offers the option to install pip and venv, keep it checked.\n\nContinue to your operating system chapter now.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Choose Your Python Path</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/macos-no-brew.html",
+    "href": "setup/python-install/macos-no-brew.html",
+    "title": "4  macOS — Python 3.11 via python.org",
+    "section": "",
+    "text": "4.1 Step 1. Download the Installer",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/macos-no-brew.html#step-1.-download-the-installer",
+    "href": "setup/python-install/macos-no-brew.html#step-1.-download-the-installer",
+    "title": "4  macOS — Python 3.11 via python.org",
+    "section": "",
+    "text": "Open your browser to the official Python 3.11 release page: https://www.python.org/downloads/release/python-3110/\nScroll to Files and download the macOS 64-bit universal2 installer (.pkg).\n\n\n[!tip] Save the installer in your Downloads folder so you can remove it once the installation succeeds.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/macos-no-brew.html#step-2.-run-the-installer",
+    "href": "setup/python-install/macos-no-brew.html#step-2.-run-the-installer",
+    "title": "4  macOS — Python 3.11 via python.org",
+    "section": "4.2 Step 2. Run the Installer",
+    "text": "4.2 Step 2. Run the Installer\n\nDouble-click the downloaded .pkg.\nAccept the license and proceed with the default options.\nWhen prompted for admin approval, enter your password to allow the installation.\n\n\n[!warning] If macOS blocks the installer, right-click the .pkg, choose Open, then click Open again to bypass Gatekeeper for this trusted package.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/macos-no-brew.html#step-3.-verify-the-installation",
+    "href": "setup/python-install/macos-no-brew.html#step-3.-verify-the-installation",
+    "title": "4  macOS — Python 3.11 via python.org",
+    "section": "4.3 Step 3. Verify the Installation",
+    "text": "4.3 Step 3. Verify the Installation\nOpen Terminal (Launchpad → search for “Terminal”) and run the following checks.\n\nConfirm that Python 3.11 is reachable from the command line:\n\npython3.11 --version\n\nConfirm that pip is installed with the same interpreter:\n\npip3.11 --version\n\n[!check] Expect outputs similar to Python 3.11.x and pip 24.x. If you see another version, retry the installer and ensure you launched the newly installed Terminal session.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/macos-no-brew.html#step-4.-create-a-convenience-alias-optional",
+    "href": "setup/python-install/macos-no-brew.html#step-4.-create-a-convenience-alias-optional",
+    "title": "4  macOS — Python 3.11 via python.org",
+    "section": "4.4 Step 4. Create a Convenience Alias (Optional)",
+    "text": "4.4 Step 4. Create a Convenience Alias (Optional)\nIf the commands above work but you prefer to type python instead of python3.11, create a shell alias.\n\nOpen your shell profile in the default text editor:\n\nopen -e ~/.zprofile\nAdd this line at the end of the file, then save and close:\nalias python=\"python3.11\"\nalias pip=\"pip3.11\"\n\nReload the profile so the alias is available immediately:\n\nsource ~/.zprofile\n\n[!note] The alias only affects new Terminal sessions. If you run automated scripts later, call python3.11 explicitly to avoid ambiguity.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/macos-no-brew.html#step-5.-record-the-installation-path",
+    "href": "setup/python-install/macos-no-brew.html#step-5.-record-the-installation-path",
+    "title": "4  macOS — Python 3.11 via python.org",
+    "section": "4.5 Step 5. Record the Installation Path",
+    "text": "4.5 Step 5. Record the Installation Path\nKnowing where Python lives helps when configuring IDEs.\n\nPrint the full path to the Python 3.11 executable:\n\nwhich python3.11\nTake note of the path (usually /usr/local/bin/python3.11). You will reference it when creating virtual environments.\nOnce the checks pass, move on to Virtual Environment and pip.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/windows.html",
+    "href": "setup/python-install/windows.html",
+    "title": "5  Windows — Python 3.11 via python.org",
+    "section": "",
+    "text": "5.1 Step 1. Download the Installer",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Windows — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/windows.html#step-1.-download-the-installer",
+    "href": "setup/python-install/windows.html#step-1.-download-the-installer",
+    "title": "5  Windows — Python 3.11 via python.org",
+    "section": "",
+    "text": "In your browser, open https://www.python.org/downloads/release/python-3110/.\nUnder Files, download Windows installer (64-bit).\n\n\n[!tip] Do not run the installer from inside the ZIP preview. Save it to your Downloads folder first.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Windows — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/windows.html#step-2.-run-the-installer-with-the-correct-options",
+    "href": "setup/python-install/windows.html#step-2.-run-the-installer-with-the-correct-options",
+    "title": "5  Windows — Python 3.11 via python.org",
+    "section": "5.2 Step 2. Run the Installer with the Correct Options",
+    "text": "5.2 Step 2. Run the Installer with the Correct Options\n\nDouble-click python-3.11.x-amd64.exe.\nAt the bottom of the first screen, check the box labeled Add python.exe to PATH.\nClick Customize installation. Keep all optional features checked.\nOn the next screen, ensure Install for all users is selected (requires admin rights) and confirm the install location (default is C:\\Program Files\\Python311\\).\nClick Install and let the setup finish.\n\nIf Windows SmartScreen warns you, choose More info → Run anyway.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Windows — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/windows.html#step-3.-verify-the-installation",
+    "href": "setup/python-install/windows.html#step-3.-verify-the-installation",
+    "title": "5  Windows — Python 3.11 via python.org",
+    "section": "5.3 Step 3. Verify the Installation",
+    "text": "5.3 Step 3. Verify the Installation\nOpen Windows Terminal or PowerShell (Win + X → Windows Terminal).\n\nConfirm that Python 3.11 is active when calling python:\n\npython --version\n\nConfirm that pip is bundled with this interpreter:\n\npip --version\n\n[!check] You should see Python 3.11.x and pip 24.x. If the version is different or the commands are missing, sign out and back in to refresh the PATH, then retry the checks.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Windows — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/windows.html#step-4.-enable-long-paths-optional-but-helpful",
+    "href": "setup/python-install/windows.html#step-4.-enable-long-paths-optional-but-helpful",
+    "title": "5  Windows — Python 3.11 via python.org",
+    "section": "5.4 Step 4. Enable Long Paths (Optional but Helpful)",
+    "text": "5.4 Step 4. Enable Long Paths (Optional but Helpful)\nSome Python packages create nested folders. Enable long paths to avoid errors.\n\nTurn on long path support via PowerShell:\n\nSet-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\FileSystem\" `\n  -Name \"LongPathsEnabled\" -Value 1\nRestart Windows Terminal after running the command.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Windows — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/python-install/windows.html#step-5.-record-the-installation-path",
+    "href": "setup/python-install/windows.html#step-5.-record-the-installation-path",
+    "title": "5  Windows — Python 3.11 via python.org",
+    "section": "5.5 Step 5. Record the Installation Path",
+    "text": "5.5 Step 5. Record the Installation Path\n\nPrint the directory where python.exe lives:\n\nGet-Command python | Select-Object -ExpandProperty Source\nKeep the path handy for IDE configuration (for example C:\\Program Files\\Python311\\python.exe).\nProceed to Virtual Environment and pip once all checks pass.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Windows — Python 3.11 via python.org</span>"
+    ]
+  },
+  {
+    "objectID": "setup/venv-and-pip.html",
+    "href": "setup/venv-and-pip.html",
+    "title": "6  Virtual Environment and pip",
+    "section": "",
+    "text": "6.1 Why Use a Virtual Environment?",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Virtual Environment and pip</span>"
+    ]
+  },
+  {
+    "objectID": "setup/venv-and-pip.html#why-use-a-virtual-environment",
+    "href": "setup/venv-and-pip.html#why-use-a-virtual-environment",
+    "title": "6  Virtual Environment and pip",
+    "section": "",
+    "text": "Keeps ADK and its libraries separate from system Python.\nAllows experiments without risking other projects.\nMakes it easy to recreate the setup by sharing the commands.\n\n\n[!tip] Run the commands from the folder where you want to store your ADK projects, such as Documents/adk.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Virtual Environment and pip</span>"
+    ]
+  },
+  {
+    "objectID": "setup/venv-and-pip.html#macos-terminal",
+    "href": "setup/venv-and-pip.html#macos-terminal",
+    "title": "6  Virtual Environment and pip",
+    "section": "6.2 macOS Terminal",
+    "text": "6.2 macOS Terminal\n\nCreate a virtual environment named .venv using Python 3.11:\n\npython3.11 -m venv .venv\n\nActivate the environment (notice the (.venv) prefix in your prompt):\n\nsource .venv/bin/activate\n\nUpgrade pip inside the activated environment:\n\npython -m pip install --upgrade pip",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Virtual Environment and pip</span>"
+    ]
+  },
+  {
+    "objectID": "setup/venv-and-pip.html#windows-powershell",
+    "href": "setup/venv-and-pip.html#windows-powershell",
+    "title": "6  Virtual Environment and pip",
+    "section": "6.3 Windows PowerShell",
+    "text": "6.3 Windows PowerShell\n\nCreate the .venv folder using the Python 3.11 interpreter:\n\npython -m venv .venv\n\nActivate the environment for the current PowerShell session:\n\n.\\\\.venv\\\\Scripts\\\\Activate.ps1\n\nUpgrade pip while the environment is active:\n\npython -m pip install --upgrade pip\n\n[!check] After activation, the prompt starts with (.venv) and python --version reports 3.11.x. If Activate.ps1 is blocked, set the execution policy using Set-ExecutionPolicy -Scope CurrentUser RemoteSigned and retry.\n\nStay inside the activated environment for the remaining setup steps.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Virtual Environment and pip</span>"
+    ]
+  },
+  {
+    "objectID": "setup/adk-install.html",
+    "href": "setup/adk-install.html",
+    "title": "7  Install Google ADK",
+    "section": "",
+    "text": "7.1 Step 1. Confirm the Environment Is Active\nBefore installing, make sure you see (.venv) in your terminal prompt. If not, reactivate it:",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "setup/adk-install.html#step-1.-confirm-the-environment-is-active",
+    "href": "setup/adk-install.html#step-1.-confirm-the-environment-is-active",
+    "title": "7  Install Google ADK",
+    "section": "",
+    "text": "Reactivate on macOS (zsh):\n\nsource .venv/bin/activate\n\nReactivate on Windows (PowerShell):\n\n.\\\\.venv\\\\Scripts\\\\Activate.ps1",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "setup/adk-install.html#step-2.-install-the-adk-package",
+    "href": "setup/adk-install.html#step-2.-install-the-adk-package",
+    "title": "7  Install Google ADK",
+    "section": "7.2 Step 2. Install the ADK Package",
+    "text": "7.2 Step 2. Install the ADK Package\n\nInstall the Google Agent Development Kit with pip:\n\npip install google-adk\n\n[!note] The command above works on both macOS and Windows while the environment is active. pip automatically resolves compatible dependencies for Python 3.11.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "setup/adk-install.html#step-3.-verify-the-cli",
+    "href": "setup/adk-install.html#step-3.-verify-the-cli",
+    "title": "7  Install Google ADK",
+    "section": "7.3 Step 3. Verify the CLI",
+    "text": "7.3 Step 3. Verify the CLI\n\nConfirm that the adk command is available:\n\nadk --version\n\n[!check] Expect a version string such as google-adk, version 0.x. If you see “command not found”, revisit the activation step—the CLI is installed inside .venv.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "setup/adk-install.html#step-4.-set-the-gemini-api-key",
+    "href": "setup/adk-install.html#step-4.-set-the-gemini-api-key",
+    "title": "7  Install Google ADK",
+    "section": "7.4 Step 4. Set the Gemini API Key",
+    "text": "7.4 Step 4. Set the Gemini API Key\nYou will need an API key from https://ai.google.dev. Once you have it, store it as an environment variable before creating projects.\n\n7.4.1 macOS (zsh)\n\nAdd the key to your shell profile so it loads automatically:\n\necho 'export GEMINI_API_KEY=\"paste-your-key-here\"' &gt;&gt; ~/.zprofile\n\nReload the profile to use the key immediately:\n\nsource ~/.zprofile\n\n\n7.4.2 Windows (PowerShell)\n\nStore the key for your user account:\n\n[Environment]::SetEnvironmentVariable(\"GEMINI_API_KEY\",\"paste-your-key-here\",\"User\")\n\nLoad the new value into the current session:\n\n$Env:GEMINI_API_KEY = \"paste-your-key-here\"\n\n[!warning] Treat the API key like a password. Never commit it to version control or share screenshots that display it.\n\nProceed to First Agent to scaffold your project.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "setup/first-agent.html",
+    "href": "setup/first-agent.html",
+    "title": "8  Your First Agent",
+    "section": "",
+    "text": "8.1 Step 1. Pick a Workspace Folder\nCreate or navigate to a folder where you want to store ADK projects (for example Documents/adk-projects). Keep the virtual environment active inside this folder path.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Your First Agent</span>"
+    ]
+  },
+  {
+    "objectID": "setup/first-agent.html#step-1.-pick-a-workspace-folder",
+    "href": "setup/first-agent.html#step-1.-pick-a-workspace-folder",
+    "title": "8  Your First Agent",
+    "section": "",
+    "text": "[!tip] On macOS, use Finder → right-click → New Terminal at Folder. On Windows, open the folder in File Explorer, then type powershell in the address bar.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Your First Agent</span>"
+    ]
+  },
+  {
+    "objectID": "setup/first-agent.html#step-2.-create-the-project",
+    "href": "setup/first-agent.html#step-2.-create-the-project",
+    "title": "8  Your First Agent",
+    "section": "8.2 Step 2. Create the Project",
+    "text": "8.2 Step 2. Create the Project\n\nScaffold a project named app_01 using the code agent template:\n\nadk create --type=code app_01 --model gemini-2.0-flash-live-001 --api_key $GEMINI_API_KEY\nWhat the parameters mean:\n\n--type=code: Sets up a code-oriented agent.\napp_01: Creates a folder with that name.\n--model: Chooses the Gemini model for default prompts.\n--api_key: Reads the key from the environment variable you stored earlier.\n\n\n[!note] On Windows PowerShell, the same command works. If the API key does not populate, verify it with echo $Env:GEMINI_API_KEY first.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Your First Agent</span>"
+    ]
+  },
+  {
+    "objectID": "setup/first-agent.html#step-3.-explore-the-project-layout",
+    "href": "setup/first-agent.html#step-3.-explore-the-project-layout",
+    "title": "8  Your First Agent",
+    "section": "8.3 Step 3. Explore the Project Layout",
+    "text": "8.3 Step 3. Explore the Project Layout\n\nList the files that ADK generated:\n\nls app_01\nYou should see configuration files (such as adk.yaml) and starter code under app_01/src.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Your First Agent</span>"
+    ]
+  },
+  {
+    "objectID": "setup/first-agent.html#step-4.-start-the-web-interface",
+    "href": "setup/first-agent.html#step-4.-start-the-web-interface",
+    "title": "8  Your First Agent",
+    "section": "8.4 Step 4. Start the Web Interface",
+    "text": "8.4 Step 4. Start the Web Interface\nChange into the project directory, then launch the ADK web UI.\n\nMove into the project folder:\n\ncd app_01\n\nStart the local ADK web experience:\n\nadk web\n\n[!check] When the server starts, the terminal prints Serving on http://localhost:8000. Open that address in your browser to interact with the agent. Stop the server with Ctrl+C when finished.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Your First Agent</span>"
+    ]
+  },
+  {
+    "objectID": "setup/first-agent.html#step-5.-capture-your-settings",
+    "href": "setup/first-agent.html#step-5.-capture-your-settings",
+    "title": "8  Your First Agent",
+    "section": "8.5 Step 5. Capture Your Settings",
+    "text": "8.5 Step 5. Capture Your Settings\nRecord the following for future reference:\n\nPython version (python --version)\nADK version (adk --version)\nLocation of the project folder\n\nHaving this information handy makes it easier to recreate the environment on a new machine.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Your First Agent</span>"
+    ]
+  },
+  {
+    "objectID": "setup/jupyter.html",
+    "href": "setup/jupyter.html",
+    "title": "9  Optional: Jupyter",
+    "section": "",
+    "text": "9.1 When to Use Jupyter\nIf you only need the command-line interface, feel free to skip this chapter.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Optional: Jupyter</span>"
+    ]
+  },
+  {
+    "objectID": "setup/jupyter.html#when-to-use-jupyter",
+    "href": "setup/jupyter.html#when-to-use-jupyter",
+    "title": "9  Optional: Jupyter",
+    "section": "",
+    "text": "Prototype prompts or agent logic interactively.\nShare notebooks with teammates while keeping dependencies identical.\nDocument experiments alongside runnable code.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Optional: Jupyter</span>"
+    ]
+  },
+  {
+    "objectID": "setup/jupyter.html#install-notebook-tools",
+    "href": "setup/jupyter.html#install-notebook-tools",
+    "title": "9  Optional: Jupyter",
+    "section": "9.2 Install Notebook Tools",
+    "text": "9.2 Install Notebook Tools\nMake sure the virtual environment is active ((.venv) in your prompt) before running these commands.\n\nInstall Jupyter and the IPython kernel helpers:\n\npip install jupyter ipykernel\n\nRegister the environment as a named kernel called adk-env:\n\npython -m ipykernel install --user --name=adk-env\n\n[!check] The second command prints the location of the new kernel. Open Jupyter (jupyter notebook or VS Code) and select adk-env to run notebooks inside this virtual environment.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Optional: Jupyter</span>"
+    ]
+  },
+  {
+    "objectID": "setup/jupyter.html#keep-things-in-sync",
+    "href": "setup/jupyter.html#keep-things-in-sync",
+    "title": "9  Optional: Jupyter",
+    "section": "9.3 Keep Things in Sync",
+    "text": "9.3 Keep Things in Sync\n\nWhenever you add packages with pip, they automatically become available inside the adk-env kernel.\nIf you rename the project folder, rerun the kernel registration command to update links.\n\nTo uninstall later, use jupyter kernelspec uninstall adk-env while the environment is active.",
+    "crumbs": [
+      "Setup Overview",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Optional: Jupyter</span>"
+    ]
+  },
+  {
+    "objectID": "troubleshooting/index.html",
+    "href": "troubleshooting/index.html",
+    "title": "Troubleshooting Guide",
+    "section": "",
+    "text": "How to Use This Part\nWhen something unexpected happens, start here. Each entry links a symptom to likely causes and simple fixes you can apply immediately.",
+    "crumbs": [
+      "Troubleshooting Guide"
+    ]
+  },
+  {
+    "objectID": "troubleshooting/index.html#tips-for-effective-troubleshooting",
+    "href": "troubleshooting/index.html#tips-for-effective-troubleshooting",
+    "title": "Troubleshooting Guide",
+    "section": "Tips for Effective Troubleshooting",
+    "text": "Tips for Effective Troubleshooting\n\nRe-run the verification command from the chapter where the problem appeared.\nCapture the exact error message; even a single character matters.\nIf you are stuck, deactivate the virtual environment (deactivate), close the terminal, and repeat the last successful checkpoint.\n\n\n[!tip] Most installation issues trace back to an inactive virtual environment or a missing PATH entry. The tables in the next chapter point to the exact resolution steps.",
+    "crumbs": [
+      "Troubleshooting Guide"
+    ]
+  },
+  {
+    "objectID": "troubleshooting/common-errors.html",
+    "href": "troubleshooting/common-errors.html",
+    "title": "10  Common Errors",
+    "section": "",
+    "text": "10.1 adk: command not found",
+    "crumbs": [
+      "Troubleshooting Guide",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Common Errors</span>"
+    ]
+  },
+  {
+    "objectID": "troubleshooting/common-errors.html#adk-command-not-found",
+    "href": "troubleshooting/common-errors.html#adk-command-not-found",
+    "title": "10  Common Errors",
+    "section": "",
+    "text": "Likely Cause\nSuggested Action\n\n\n\n\nThe virtual environment is inactive.\nActivate it again using the command for your operating system.\n\n\nadk was installed outside the environment.\nReinstall ADK while the environment is active.\n\n\n\n\nActivate the environment on macOS:\n\nsource .venv/bin/activate\n\nReactivate the environment on Windows:\n\n.\\\\.venv\\\\Scripts\\\\Activate.ps1\n\nReinstall ADK in the active environment if needed:\n\npython -m pip install google-adk",
+    "crumbs": [
+      "Troubleshooting Guide",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Common Errors</span>"
+    ]
+  },
+  {
+    "objectID": "troubleshooting/common-errors.html#python3.11-command-not-found-macos",
+    "href": "troubleshooting/common-errors.html#python3.11-command-not-found-macos",
+    "title": "10  Common Errors",
+    "section": "10.2 python3.11: command not found (macOS)",
+    "text": "10.2 python3.11: command not found (macOS)\n\n\n\n\n\n\n\nLikely Cause\nFix\n\n\n\n\nThe installer was not run or Terminal is still using the old session.\nQuit Terminal, reopen it, and rerun python3.11 --version.\n\n\nPATH is missing /usr/local/bin.\nAdd export PATH=\"/usr/local/bin:$PATH\" to ~/.zprofile, then source ~/.zprofile.\n\n\n\n\nAdd /usr/local/bin to the PATH if needed:\n\necho 'export PATH=\"/usr/local/bin:$PATH\"' &gt;&gt; ~/.zprofile\n\nReload the profile to apply the change:\n\nsource ~/.zprofile",
+    "crumbs": [
+      "Troubleshooting Guide",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Common Errors</span>"
+    ]
+  },
+  {
+    "objectID": "troubleshooting/common-errors.html#pip-points-to-another-python-windows",
+    "href": "troubleshooting/common-errors.html#pip-points-to-another-python-windows",
+    "title": "10  Common Errors",
+    "section": "10.3 pip Points to Another Python (Windows)",
+    "text": "10.3 pip Points to Another Python (Windows)\n\n\n\n\n\n\n\nLikely Cause\nFix\n\n\n\n\nAnother Python version is earlier in PATH.\nUse the interpreter to drive pip explicitly.\n\n\n\n\nInvoke pip through Python 3.11:\n\npython -m pip install --upgrade pip",
+    "crumbs": [
+      "Troubleshooting Guide",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Common Errors</span>"
+    ]
+  },
+  {
+    "objectID": "troubleshooting/common-errors.html#tlsssl-errors-during-pip-install",
+    "href": "troubleshooting/common-errors.html#tlsssl-errors-during-pip-install",
+    "title": "10  Common Errors",
+    "section": "10.4 TLS/SSL Errors During pip install",
+    "text": "10.4 TLS/SSL Errors During pip install\n\n\n\n\n\n\n\nLikely Cause\nFix\n\n\n\n\nCorporate SSL inspection or outdated certificates.\nInstall certificates bundled with Python.\n\n\n\n\nRun the certificate installation script (macOS):\n\n\"/Applications/Python 3.11/Install Certificates.command\"\n\nRun the certificate installation script (Windows):\n\n& \"C:\\Program Files\\Python311\\Install Certificates.command\"\nIf the command path differs, open the Python installation folder and double-click the script manually.",
+    "crumbs": [
+      "Troubleshooting Guide",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Common Errors</span>"
+    ]
+  },
+  {
+    "objectID": "troubleshooting/common-errors.html#modulenotfounderror-after-activating-the-environment",
+    "href": "troubleshooting/common-errors.html#modulenotfounderror-after-activating-the-environment",
+    "title": "10  Common Errors",
+    "section": "10.5 ModuleNotFoundError After Activating the Environment",
+    "text": "10.5 ModuleNotFoundError After Activating the Environment\n\n\n\n\n\n\n\nLikely Cause\nFix\n\n\n\n\nRequired package not installed in .venv.\nInstall the package while the environment is active.\n\n\n\n\nInstall a missing package (example for google-adk):\n\npip install google-adk\n\n[!tip] If you discover a new issue, add it to this chapter with the exact command and output. A future you (or teammate) will thank you.",
+    "crumbs": [
+      "Troubleshooting Guide",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Common Errors</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/glossary.html",
+    "href": "appendix/glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "Term\nPlain-language meaning\n\n\n\n\nADK\nGoogle Agent Development Kit, a toolkit for building AI assistants.\n\n\nAgent\nA software program that can reason about inputs and trigger actions (like calling APIs).\n\n\nCLI\nCommand-line interface; you interact with ADK by typing commands.\n\n\nGemini\nGoogle’s family of AI models used by ADK.\n\n\nAPI key\nA secret string that identifies you to Google’s services.\n\n\nPython\nThe programming language ADK runs on.\n\n\nPython 3.11\nThe specific Python release targeted in this guide.\n\n\nVirtual environment (venv)\nA folder that contains its own Python interpreter and packages.\n\n\npip\nPython’s standard package manager for installing libraries.\n\n\nPATH\nAn environment variable that tells your computer where to look for programs.\n\n\nPowerShell\nThe default command-line shell included with Windows 10/11.\n\n\nTerminal\nThe macOS application used to run shell commands.",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "appendix/faq.html",
+    "href": "appendix/faq.html",
+    "title": "11  FAQ",
+    "section": "",
+    "text": "11.1 Why does the guide insist on Python 3.11?\nADK and most AI libraries ship precompiled wheels for Python 3.11. Earlier versions miss performance improvements; newer versions may not have all dependencies yet.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/faq.html#can-i-use-python-3.12-instead",
+    "href": "appendix/faq.html#can-i-use-python-3.12-instead",
+    "title": "11  FAQ",
+    "section": "11.2 Can I use Python 3.12 instead?",
+    "text": "11.2 Can I use Python 3.12 instead?\nYou can experiment with 3.12, but expect occasional package issues. If you need maximum compatibility, stick with 3.11 for now.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/faq.html#do-i-need-to-uninstall-other-python-versions-first",
+    "href": "appendix/faq.html#do-i-need-to-uninstall-other-python-versions-first",
+    "title": "11  FAQ",
+    "section": "11.3 Do I need to uninstall other Python versions first?",
+    "text": "11.3 Do I need to uninstall other Python versions first?\nNo. Multiple versions can coexist. Just make sure the virtual environment uses Python 3.11 and that you run commands inside the environment.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/faq.html#where-do-i-get-the-gemini-api-key",
+    "href": "appendix/faq.html#where-do-i-get-the-gemini-api-key",
+    "title": "11  FAQ",
+    "section": "11.4 Where do I get the Gemini API key?",
+    "text": "11.4 Where do I get the Gemini API key?\nVisit https://ai.google.dev, sign in with your Google account, and create a key under Get API key. Store it securely using the commands shown in the ADK installation chapter.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/faq.html#can-i-work-without-the-api-key",
+    "href": "appendix/faq.html#can-i-work-without-the-api-key",
+    "title": "11  FAQ",
+    "section": "11.5 Can I work without the API key?",
+    "text": "11.5 Can I work without the API key?\nYou can create the project, but running the agent requires a valid key. Without it, ADK cannot contact Gemini models.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/faq.html#is-homebrew-or-another-package-manager-required-on-macos",
+    "href": "appendix/faq.html#is-homebrew-or-another-package-manager-required-on-macos",
+    "title": "11  FAQ",
+    "section": "11.6 Is Homebrew or another package manager required on macOS?",
+    "text": "11.6 Is Homebrew or another package manager required on macOS?\nNo. The instructions rely entirely on the python.org installer and pip. You can add Homebrew later if you need other development tools.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/faq.html#how-do-i-update-adk-later",
+    "href": "appendix/faq.html#how-do-i-update-adk-later",
+    "title": "11  FAQ",
+    "section": "11.7 How do I update ADK later?",
+    "text": "11.7 How do I update ADK later?\nActivate your environment and run pip install --upgrade google-adk. Re-run adk --version afterwards to confirm the update.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/faq.html#what-if-i-accidentally-installed-packages-outside-the-virtual-environment",
+    "href": "appendix/faq.html#what-if-i-accidentally-installed-packages-outside-the-virtual-environment",
+    "title": "11  FAQ",
+    "section": "11.8 What if I accidentally installed packages outside the virtual environment?",
+    "text": "11.8 What if I accidentally installed packages outside the virtual environment?\nDeactivate (deactivate), delete the .venv folder, recreate it with python3.11 -m venv .venv, and reinstall using the commands in the guide.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "appendix/references.html",
+    "href": "appendix/references.html",
+    "title": "12  References",
+    "section": "",
+    "text": "Python downloads: https://www.python.org/downloads/release/python-3110/\nQuarto documentation: https://quarto.org/docs/books/\nGoogle ADK documentation: https://ai.google.dev/gemini-api/tools/adk\nGemini quickstart: https://ai.google.dev/gemini-api/docs/quickstart\nPowerShell execution policy overview: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies\nPython virtual environments (venv): https://docs.python.org/3/library/venv.html",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>References</span>"
+    ]
+  }
+]
