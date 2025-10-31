@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Google Agent Development Kit (ADK) Setup">
 
-<title>7&nbsp; title: “Your First Agent” – ADK Setup</title>
+<title>2&nbsp; Preparation – ADK Setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,65 +22,30 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../setup/jupyter.html" rel="next">
-<link href="../setup/adk-install.html" rel="prev">
-<link href="..//images/logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-969ddfa49e00a70eb3423444dbc81f6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fa6efc770c2d319c973cf89115f34324.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./python-macos.html" rel="next">
+<link href="./index.html" rel="prev">
+<link href=".//images/logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-969ddfa49e00a70eb3423444dbc81f6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-fa6efc770c2d319c973cf89115f34324.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -115,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<link rel="stylesheet" href="../theme.scss">
+<link rel="stylesheet" href="theme.scss">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -127,7 +92,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html">Build Your Workspace</a></li><li class="breadcrumb-item"><a href="../setup/first-agent.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li><li class="breadcrumb-item"><a href="./preparation.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparation</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -141,10 +106,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../index.html" class="sidebar-logo-link">
+      <a href="./index.html" class="sidebar-logo-link">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">ADK Setup</a> 
+      <a href="./">ADK Setup</a> 
         <div class="sidebar-tools-main">
     <div id="quarto-search" class="quarto-navigation-tool px-1" title="Search"></div>
 </div>
@@ -152,16 +117,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../setup/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Orientation</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introduction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -169,7 +128,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup/preparation.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preparation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparation</span></span></a>
   </div>
 </li>
@@ -177,8 +142,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../setup/python-install/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Choose Your Python Path</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Install Python</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -186,14 +151,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup/python-install/macos-no-brew.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">title: “macOS — Python 3.11 via python.org”</span></span></a>
+  <a href="./python-macos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">macOS</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup/python-install/windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">title: “Windows — Python 3.11 via python.org”</span></span></a>
+  <a href="./python-windows.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Windows</span></span></a>
   </div>
 </li>
       </ul>
@@ -209,33 +174,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup/venv-and-pip.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">title: “Virtual Environment and pip”</span></span></a>
+  <a href="./venv-and-pip.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Virtual Environment and pip</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup/adk-install.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “Install Google ADK”</span></span></a>
+  <a href="./adk-install.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Install Google ADK</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup/first-agent.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></span></a>
+  <a href="./first-agent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Your First Agent</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup/jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: “Optional: Jupyter”</span></span></a>
+  <a href="./jupyter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Optional: Jupyter</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../troubleshooting/index.html" class="sidebar-item-text sidebar-link">
+            <a href="./troubleshooting/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Troubleshooting Guide</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -244,7 +209,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../troubleshooting/common-errors.html" class="sidebar-item-text sidebar-link">
+  <a href="./troubleshooting/common-errors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Common Errors</span></span></a>
   </div>
 </li>
@@ -252,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../appendix/glossary.html" class="sidebar-item-text sidebar-link">
+            <a href="./appendix/glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -261,13 +226,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendix/faq.html" class="sidebar-item-text sidebar-link">
+  <a href="./appendix/faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendix/references.html" class="sidebar-item-text sidebar-link">
+  <a href="./appendix/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
@@ -283,20 +248,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#step-1.-pick-a-workspace-folder" id="toc-step-1.-pick-a-workspace-folder" class="nav-link active" data-scroll-target="#step-1.-pick-a-workspace-folder"><span class="header-section-number">7.1</span> Step 1. Pick a Workspace Folder</a></li>
-  <li><a href="#step-2.-create-the-project" id="toc-step-2.-create-the-project" class="nav-link" data-scroll-target="#step-2.-create-the-project"><span class="header-section-number">7.2</span> Step 2. Create the Project</a></li>
-  <li><a href="#step-3.-explore-the-project-layout" id="toc-step-3.-explore-the-project-layout" class="nav-link" data-scroll-target="#step-3.-explore-the-project-layout"><span class="header-section-number">7.3</span> Step 3. Explore the Project Layout</a></li>
-  <li><a href="#step-4.-start-the-web-interface" id="toc-step-4.-start-the-web-interface" class="nav-link" data-scroll-target="#step-4.-start-the-web-interface"><span class="header-section-number">7.4</span> Step 4. Start the Web Interface</a></li>
-  <li><a href="#step-5.-capture-your-settings" id="toc-step-5.-capture-your-settings" class="nav-link" data-scroll-target="#step-5.-capture-your-settings"><span class="header-section-number">7.5</span> Step 5. Capture Your Settings</a></li>
+  <li><a href="#key-concepts-in-plain-language" id="toc-key-concepts-in-plain-language" class="nav-link active" data-scroll-target="#key-concepts-in-plain-language"><span class="header-section-number">2.1</span> Key Concepts in Plain Language</a></li>
+  <li><a href="#before-you-continue" id="toc-before-you-continue" class="nav-link" data-scroll-target="#before-you-continue"><span class="header-section-number">2.2</span> Before You Continue</a></li>
+  <li><a href="#why-stick-to-python-3.11" id="toc-why-stick-to-python-3.11" class="nav-link" data-scroll-target="#why-stick-to-python-3.11"><span class="header-section-number">2.3</span> Why Stick to Python 3.11?</a></li>
+  <li><a href="#next-stop" id="toc-next-stop" class="nav-link" data-scroll-target="#next-stop"><span class="header-section-number">2.4</span> Next Stop</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../setup/venv-and-pip.html">Build Your Workspace</a></li><li class="breadcrumb-item"><a href="../setup/first-agent.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li><li class="breadcrumb-item"><a href="./preparation.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparation</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">title: “Your First Agent”</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparation</span></h1>
 </div>
 
 
@@ -319,36 +283,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><strong>Goal:</strong> Generate a starter ADK project, connect it to Gemini, and launch the local web interface.</p>
+<p><strong>Goal:</strong> Walk away knowing the key concepts, required accounts, and which version of Python to download.</p>
 </div>
 </div>
 </div>
-<section id="step-1.-pick-a-workspace-folder" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="step-1.-pick-a-workspace-folder"><span class="header-section-number">7.1</span> Step 1. Pick a Workspace Folder</h2>
-<p>Create or navigate to a folder where you want to store ADK projects (for example <code>Documents/adk-projects</code>). Keep the virtual environment active inside this folder path.</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>On macOS, use Finder → right-click → <strong>New Terminal at Folder</strong>. On Windows, open the folder in File Explorer, then type <code>powershell</code> in the address bar.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="step-2.-create-the-project" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="step-2.-create-the-project"><span class="header-section-number">7.2</span> Step 2. Create the Project</h2>
-<div class="cmd-explain">
-Scaffold a project named <code>app_01</code> using the code agent template:
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adk</span> create <span class="at">--type</span><span class="op">=</span>code app_01 <span class="at">--model</span> gemini-2.0-flash-live-001 <span class="at">--api_key</span> <span class="va">$GEMINI_API_KEY</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>What the parameters mean:</p>
+<section id="key-concepts-in-plain-language" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="key-concepts-in-plain-language"><span class="header-section-number">2.1</span> Key Concepts in Plain Language</h2>
 <ul>
-<li><code>--type=code</code>: Sets up a code-oriented agent.</li>
-<li><code>app_01</code>: Creates a folder with that name.</li>
-<li><code>--model</code>: Chooses the Gemini model for default prompts.</li>
-<li><code>--api_key</code>: Reads the key from the environment variable you stored earlier.</li>
+<li><strong>Google Agent Development Kit (ADK)</strong>: Google’s toolkit for building AI agents that can talk, reason, and take actions. You interact with it through commands like <code>adk create</code>.</li>
+<li><strong>Python</strong>: The programming language ADK uses. The guide standardises on <strong>Python 3.11</strong> because it is stable and fully compatible with current ADK releases.</li>
+<li><strong>Virtual environment (<code>venv</code>)</strong>: A self-contained folder that holds Python packages for a single project. It prevents updates in one project from breaking another.</li>
+<li><strong><code>pip</code></strong>: Python’s built-in package installer. You use it to add ADK and related libraries.</li>
+<li><strong>Gemini API key</strong>: A credential that lets ADK talk to Google’s Gemini models. You can create one later at <a href="https://ai.google.dev">https://ai.google.dev</a>.</li>
+</ul>
+</section>
+<section id="before-you-continue" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="before-you-continue"><span class="header-section-number">2.2</span> Before You Continue</h2>
+<ul>
+<li>Make sure you can install software on your computer (admin or install permissions).</li>
+<li>Have about 2 GB of free disk space.</li>
+<li>Know whether you are using macOS or Windows. The next chapter sends you to the correct path.</li>
 </ul>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
@@ -356,43 +310,33 @@ Scaffold a project named <code>app_01</code> using the code agent template:
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>On Windows PowerShell, the same command works. If the API key does not populate, verify it with <code>echo $Env:GEMINI_API_KEY</code> first.</p>
+<p>If you are migrating from another Python version, keep it installed. The virtual environment will ensure the new setup does not conflict with existing work.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="step-3.-explore-the-project-layout" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="step-3.-explore-the-project-layout"><span class="header-section-number">7.3</span> Step 3. Explore the Project Layout</h2>
-<div class="cmd-explain">
-List the files that ADK generated:
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> app_01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You should see configuration files (such as <code>adk.yaml</code>) and starter code under <code>app_01/src</code>.</p>
-</section>
-<section id="step-4.-start-the-web-interface" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="step-4.-start-the-web-interface"><span class="header-section-number">7.4</span> Step 4. Start the Web Interface</h2>
-<p>Change into the project directory, then launch the ADK web UI.</p>
-<div class="cmd-explain">
-Move into the project folder:
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> app_01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cmd-explain">
-Start the local ADK web experience:
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adk</span> web</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="callout-check">
-<p>When the server starts, the terminal prints <code>Serving on http://localhost:8000</code>. Open that address in your browser to interact with the agent. Stop the server with <code>Ctrl+C</code> when finished.</p>
-</div>
-</section>
-<section id="step-5.-capture-your-settings" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="step-5.-capture-your-settings"><span class="header-section-number">7.5</span> Step 5. Capture Your Settings</h2>
-<p>Record the following for future reference:</p>
+<section id="why-stick-to-python-3.11" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="why-stick-to-python-3.11"><span class="header-section-number">2.3</span> Why Stick to Python 3.11?</h2>
+<p>Python 3.11 hits the balance between performance and compatibility:</p>
 <ul>
-<li>Python version (<code>python --version</code>)</li>
-<li>ADK version (<code>adk --version</code>)</li>
-<li>Location of the project folder</li>
+<li>ADK’s templates and dependencies target 3.11 by default.</li>
+<li>Major libraries (NumPy, pandas, TensorFlow) publish pre-built wheels for 3.11, saving compilation time.</li>
+<li>Python 3.12 or newer may work, but not all packages have caught up yet.</li>
 </ul>
-<p>Having this information handy makes it easier to recreate the environment on a new machine.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>When downloading from python.org, record where the installer places <code>python3.11</code>. You will confirm the location during the verification step.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="next-stop" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="next-stop"><span class="header-section-number">2.4</span> Next Stop</h2>
+<p>Head to <strong>Python Installation</strong> and choose the chapter that matches your operating system.</p>
 
 
 </section>
@@ -800,13 +744,13 @@ Start the local ADK web experience:
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../setup/adk-install.html" class="pagination-link" aria-label="title: &quot;Install Google ADK&quot;">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “Install Google ADK”</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../setup/jupyter.html" class="pagination-link" aria-label="title: &quot;Optional: Jupyter&quot;">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: “Optional: Jupyter”</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./python-macos.html" class="pagination-link" aria-label="macOS">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">macOS</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
