@@ -22,23 +22,24 @@ book:
       © [Jan Kirenz](https://www.kirenz.com/), 2025
 
   chapters:
-    - index.qmd
 
-    - part: setup/index.qmd
-      chapters:
-        - setup/preparation.qmd
 
-    - part: setup/python-install/index.qmd
+    - part: "Introduction"
       chapters:
-        - setup/python-install/macos-no-brew.qmd
-        - setup/python-install/windows.qmd
+        - index.qmd
+        - preparation.qmd
+
+    - part: "Install Python"
+      chapters:
+        - python-macos.qmd
+        - python-windows.qmd
 
     - part: "Build Your Workspace"
       chapters:
-        - setup/venv-and-pip.qmd
-        - setup/adk-install.qmd
-        - setup/first-agent.qmd
-        - setup/jupyter.qmd
+        - venv-and-pip.qmd
+        - adk-install.qmd
+        - first-agent.qmd
+        - jupyter.qmd
 
     - part: troubleshooting/index.qmd
       chapters:
@@ -48,6 +49,8 @@ book:
       chapters:
         - appendix/faq.qmd
         - appendix/references.qmd
+
+number-sections: true 
 
 format:
   html:

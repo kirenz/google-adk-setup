@@ -1,14 +1,14 @@
-title: "Windows — Python 3.11 via python.org"
+---
+title: "Windows"
 ---
 
-::: {.callout-note}
 These steps use the official Windows installer. They work on Windows 10 and Windows 11.
-:::
+
 
 ## Step 1. Download the Installer
 
 1. In your browser, open [https://www.python.org/downloads/release/python-3110/](https://www.python.org/downloads/release/python-3110/).
-2. Under **Files**, download **Windows installer (64-bit)**.
+2. Scroll down to **Files** and download the right installer (usually **Windows installer (64-bit)**).
 
 ::: {.callout-tip}
 Do not run the installer from inside the ZIP preview. Save it to your Downloads folder first.

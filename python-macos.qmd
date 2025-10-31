@@ -1,14 +1,13 @@
-title: "macOS — Python 3.11 via python.org"
+---
+title: "macOS"
 ---
 
-::: {.callout-note}
-This path relies only on the official Python installer. No Homebrew or third-party package managers are required.
-:::
+This chapter covers installing Python 3.11 with the official installers.
 
 ## Step 1. Download the Installer
 
 1. Open your browser to the official Python 3.11 release page: [https://www.python.org/downloads/release/python-3110/](https://www.python.org/downloads/release/python-3110/)
-2. Scroll to **Files** and download the **macOS 64-bit universal2 installer** (`.pkg`).
+2. Scroll down to **Files** and download the **macOS 64-bit universal2 installer** (`.pkg`).
 
 ::: {.callout-tip}
 Save the installer in your Downloads folder so you can remove it once the installation succeeds.

@@ -1,5 +1,6 @@
 ---
-title: "Welcome"
+title: "Overview"
+number-sections: false
 ---
 
 This short book walks you from a clean computer to a working Google Agent Development Kit (ADK) project. The focus stays on a simple path that works on macOS and Windows with the official Python installer and `pip`.
